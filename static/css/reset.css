@@ -145,3 +145,6 @@ li {
 .fr {
 	float:right;
 }
+.ivu-select-dropdown-list {
+    float: none;
+}

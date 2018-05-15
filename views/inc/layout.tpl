@@ -14,11 +14,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title><<<.webTitle>>></title>
     <link href="favicon.ico" rel="shortcut icon">
-    <link rel="stylesheet" type="text/css" href="http://unpkg.com/iview/dist/styles/iview.css">
-    <script type="text/javascript" src="http://vuejs.org/js/vue.min.js"></script>
-    <script type="text/javascript" src="http://unpkg.com/iview/dist/iview.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/iview.css">
     <link rel="stylesheet" type="text/css" href="/static/css/style.css">
     <link rel="stylesheet" type="text/css" href="/static/css/reset.css">
+    <script type="text/javascript" src="/static/js/vue.js"></script>
+    <script type="text/javascript" src="/static/js/iview.min.js"></script>
+    <script type="text/javascript" src="/static/js/jQuery.js"></script>
+    <script type="text/javascript" src="/static/js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="/static/js/jquery.transit.js"></script>
+    <script type="text/javascript" src="/static/js/prefixfree.min.js"></script>
+    <script type="text/javascript" src="/static/js/html5.js"></script>
+    <script type="text/javascript" src="/static/js/bocfe.js"></script>
+    <script type="text/javascript" src="/static/js/plug.preload.js"></script>
+
 
 
 </head>
