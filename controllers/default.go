@@ -14,4 +14,5 @@ func (c *MainController) Get() {
 	c.TplName = "index.tpl"
 	c.LayoutSections = make(map[string]string)
 	c.LayoutSections["header_n"] = "inc/header_n.tpl"
+	c.LayoutSections["footer"] = "inc/footer.tpl"
 }

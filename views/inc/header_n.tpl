@@ -9,8 +9,8 @@
             <p>您好，123消费网欢迎您的来到！</p>
             <h2>400-888-8888</h2>
             <ul>
-                <li><a href="/log_in/log_in">登陆</a></li>
-                <li><a href="log_in/log_in ">注册</a></li>
+                <li><a href="/account/login">登陆</a></li>
+                <li><a href="/account/register ">注册</a></li>
                 <li><a href="">兑换商品</a></li>
                 <li><a href="">合作商家</a></li>
                 <li><a href="">帮助中心</a></li>
@@ -21,7 +21,7 @@
     <div class="header-d">
         <div class="box w1190">
             <div class="logo">
-                <a href="/ "><img src="/static/img//img-01.jpg " alt=""></a>
+                <a href="/ "><img src="/static/img/img-01.jpg " alt=""></a>
             </div>
             <div class="search">
                 <div class="top">

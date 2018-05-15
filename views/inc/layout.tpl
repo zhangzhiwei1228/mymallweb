@@ -33,4 +33,5 @@
 <body>
 <<<.header_n>>>
 <<<.LayoutContent>>>
+<<<.footer>>>
 </body>

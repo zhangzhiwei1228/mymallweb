@@ -209,7 +209,7 @@
 	/*overflow: hidden;*/
 	background: url(../img/img-12.png) repeat-x top;
 	position: relative;
-	margin-top: -5px;
+	margin-top: 30px;
 	z-index: 1;
 }
 /*.click-top{

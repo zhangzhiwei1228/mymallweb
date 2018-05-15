@@ -13,4 +13,5 @@ func init() {
 
 	//注解路由
 	beego.Include(&controllers.AjaxController{})
+	//beego.Include(&controllers.AccountController{})
 }
