@@ -2,6 +2,7 @@ package controllers
 
 import (
 	"github.com/astaxie/beego"
+	"log"
 )
 
 type AccountController struct {
@@ -11,7 +12,8 @@ type AccountController struct {
 
 
 //登录页面
-func (c *AccountController) loginTpl() {
+func (c *AccountController) LoginTpl() {
+	log.Print("loginTpl")
 	c.Layout = "inc/login_layout.tpl"
 	c.Data["webTitle"] = "zzwrdShop专卖--登录"
 	c.TplName = "login/login.tpl"
@@ -32,6 +34,7 @@ func (c *AccountController) loginAfter() {
 
 //登录提交的页面
 func (c *AccountController) doLogin() {
+	c.Data["webTitle"] = "zzwrdShop专卖登录"
 	c.TplName = "ajax/wel_inc.tpl"
 }
 

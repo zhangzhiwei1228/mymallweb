@@ -26,6 +26,7 @@
     <script type="text/javascript" src="/static/js/html5.js"></script>
     <script type="text/javascript" src="/static/js/bocfe.js"></script>
     <script type="text/javascript" src="/static/js/plug.preload.js"></script>
+    <script type="text/javascript" src="/static/js/sms.js"></script>
 
 
 
