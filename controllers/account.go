@@ -15,7 +15,7 @@ type AccountController struct {
 func (c *AccountController) LoginTpl() {
 	log.Print("loginTpl")
 	c.Layout = "inc/login_layout.tpl"
-	c.Data["webTitle"] = "zzwrdShop专卖--登录"
+	c.Data["webTitle"] = "zzwrdShop专卖之登录"
 	c.TplName = "login/login.tpl"
 	c.LayoutSections = make(map[string]string)
 	c.LayoutSections["header_login"] = "inc/header_login.tpl"
@@ -23,7 +23,7 @@ func (c *AccountController) LoginTpl() {
 }
 
 //登录/注册成功跳转的页面
-func (c *AccountController) successTpl() {
+func (c *AccountController) SuccessTpl() {
 	c.Layout = "inc/layout.tpl"
 	c.Data["webTitle"] = "zzwrdShop专卖"
 	c.TplName = "login/loginSuccess.tpl"
@@ -33,7 +33,7 @@ func (c *AccountController) successTpl() {
 }
 
 //登录提交的页面
-func (c *AccountController) doLogin() {
+func (c *AccountController) DoLogin() {
 	jsoninfo := c.GetString("username")
 	if jsoninfo == "" {
 		c.Ctx.WriteString("username is empty")
@@ -41,11 +41,11 @@ func (c *AccountController) doLogin() {
 	}
 }
 
-//注册页面
-func (c *AccountController) registerTpl() {
-	log.Print("registerTpl")
+//注册页面/account/registerTpl
+func (c *AccountController) RegisterTpl() {
+	log.Print("...........registerTpl.......................")
 	c.Layout = "inc/login_layout.tpl"
-	c.Data["webTitle"] = "zzwrdShop专卖--登录"
+	c.Data["webTitle"] = "zzwrdShop专卖之注册"
 	c.TplName = "login/reg.tpl"
 	c.LayoutSections = make(map[string]string)
 	c.LayoutSections["header_login"] = "inc/header_login.tpl"
@@ -53,7 +53,7 @@ func (c *AccountController) registerTpl() {
 }
 
 //注册提交的页面
-func (c *AccountController) doRegister() {
+func (c *AccountController) DoRegister() {
 	jsoninfo := c.GetString("username")
 	if jsoninfo == "" {
 		c.Ctx.WriteString("username is empty")
