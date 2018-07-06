@@ -5,10 +5,11 @@ import (
 )
 
 type DefaultController struct {
-	beego.Controller
+	BaseController
 }
 
 func (c *DefaultController) Get() {
+	beego.Info(string(c.Ctx.Input.RequestBody))
 	c.Layout = "inc/layout.tpl"
 	c.Data["webTitle"] = "zzwrdShop专卖"
 	c.TplName = "index.tpl"

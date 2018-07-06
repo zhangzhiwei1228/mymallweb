@@ -295,7 +295,7 @@
         },
         fajax: function (url, p, settings) {
             var defaults = {
-                type: 'get',
+                type: settings.type,
                 error: function (code, msg) {
                     sms.showTipErr(msg);
                 },
@@ -306,12 +306,16 @@
             };
             settings = $.extend(defaults, settings);
             sms.showLoading();
+            var xsrf, xsrflist;
+            xsrf = $.cookie("_xsrf");
+            xsrflist = xsrf.split("|");
+            p._xsrf = $.base64.decode(xsrflist[0]);
             $.ajax({
                 cache: false,
                 url: url,
                 type: settings.type,
-                data: p,
-                dataType: 'json',
+                contentType: 'application/json',
+                data: JSON.stringify(p),
                 success: function (result) {
                     sms.hideLoading();
                     if (result.code == 0) {

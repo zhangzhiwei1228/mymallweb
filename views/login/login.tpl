@@ -36,7 +36,7 @@
                 p.username = this.username;
                 p.password = this.password;
                 sms.fpost(url, p, function (data) {
-
+                    console.log(data)
                 }, function (code, msg) {
                     loginTpl.is_error = true;
                     loginTpl.errMsg = msg;

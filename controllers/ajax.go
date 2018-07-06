@@ -5,7 +5,7 @@ import (
 )
 
 type AjaxController struct {
-	beego.Controller
+	BaseController
 }
 
 func (c *AjaxController) URLMapping() {
@@ -13,5 +13,6 @@ func (c *AjaxController) URLMapping() {
 }
 // @router /ajax/WelInc/ [get]
 func (c *AjaxController) WelInc() {
+	beego.Info(string(c.Ctx.Input.RequestBody))
 	c.TplName = "ajax/wel_inc.tpl"
 }

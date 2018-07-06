@@ -20,6 +20,8 @@
     <script type="text/javascript" src="/static/js/vue.min.js"></script>
     <script type="text/javascript" src="/static/js/iview.min.js"></script>
     <script type="text/javascript" src="/static/js/jQuery.js"></script>
+    <script type="text/javascript" src="/static/js/jquery-cookies.js"></script>
+    <script type="text/javascript" src="/static/js/jquery.base64.min.js"></script>
     <script type="text/javascript" src="/static/js/sms.js"></script>
     <!--<script type="text/javascript" src="/static/js/jquery.easing.1.3.js"></script>
     <script type="text/javascript" src="/static/js/jquery.transit.js"></script>
