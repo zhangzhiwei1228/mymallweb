@@ -320,8 +320,7 @@
                     sms.hideLoading();
                     if (result.code == 0) {
                         settings.success(result.data, result);
-                    }
-                    else {
+                    } else {
                         settings.error(result.code, result.msg, result);
                     }
                 },

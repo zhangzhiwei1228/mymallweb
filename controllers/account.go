@@ -20,7 +20,8 @@ type AccountController struct {
 //登录页面
 func (c *AccountController) LoginTpl() {
 	c.Layout = "inc/login_layout.tpl"
-	c.Data["webTitle"] = "zzwrdShop专卖之登录"
+	//c.Data["xsrf_token"] = c.XSRFToken()
+	c.Data["webTitle"] = "登录"
 	c.TplName = "login/login.tpl"
 	c.LayoutSections = make(map[string]string)
 	c.LayoutSections["header_login"] = "inc/header_login.tpl"
@@ -41,7 +42,7 @@ func (c *AccountController) SuccessTpl() {
 func (c *AccountController) DoLogin() {
 	//哈希校验成功后 更新 auth_key
 	beego.Info(string(c.Ctx.Input.RequestBody))
-	postData := map[string]string{"username": "", "password": "", "_xsrf": ""}
+	postData := map[string]string{"username": "", "password": ""}
 	err := json.Unmarshal(c.Ctx.Input.RequestBody, &postData)
 	if err != nil {
 		c.SetJson(1, nil, "数据格式错误")

@@ -13,7 +13,7 @@
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title><<<.webTitle>>></title>
-    <link href="favicon.ico" rel="shortcut icon">
+    <link href="/static/img/favicon.ico" rel="shortcut icon">
     <link rel="stylesheet" type="text/css" href="/static/css/iview.css">
     <link rel="stylesheet" type="text/css" href="/static/css/style.css">
     <link rel="stylesheet" type="text/css" href="/static/css/reset.css">
