@@ -16,7 +16,6 @@ type AccountController struct {
 }
 
 
-
 //登录页面
 func (c *AccountController) LoginTpl() {
 	c.Layout = "inc/login_layout.tpl"
@@ -48,36 +47,30 @@ func (c *AccountController) DoLogin() {
 		c.SetJson(1, nil, "数据格式错误")
 		return
 	}
-	password := postData["username"]
-	userName := postData["password"]
+	userName := postData["username"]
+	password := postData["password"]
 	if userName == "" || password == "" {
-		c.SetJson(1, nil, "用户名或密码不存在")
+		c.SetJson(1, nil, "用户名或密码不能为空")
 		return
 	}
+	account_name := []string{userName, userName, userName}
 	var user models.User
 	orm.Debug = true
 	o := orm.NewOrm()
-	err = o.Raw("SELECT * FROM `act_user` WHERE username = ? OR email = ? OR mobile = ?", userName).QueryRow(&user)
-	beego.Info(err)
-	beego.Info(user)
-	c.SetJson(0, user, "")
-	//salt := "123456"
-	pwdMd5 := helper.Util{}
-	beego.Info(pwdMd5)
-	//err = bcrypt.CompareHashAndPassword([]byte(user.Password), []byte(password))
-	/*if err != nil {
-		c.SetJson(1, nil, "用户名或密码错误")
+	beego.Info("开始查询")
+	err = o.Raw("SELECT nickname,password,salt,role FROM `scn_user` WHERE username = ? OR email = ? OR mobile = ? and role='member' limit 1", account_name).QueryRow(&user)
+	if err != nil {
+		c.SetJson(1, nil, "此用户不存在，请确认后重试")
 		return
-	} else {
-		if user.AuthKey == "" {
-			userAuth := common.Md5String(user.Username + common.GetString(time.Now().Unix()))
-			user.AuthKey = userAuth
-			models.UpdateUserById(&user)
-		}
-		user.PasswordHash = ""
-		c.SetJson(0, user, "")
+	}
+	pwdMd5 := helper.PwdEncrypt(password,user.Salt)
+	if pwdMd5 != user.Password {
+		c.SetJson(1, nil, "用户密码不正确")
 		return
-	}*/
+	}
+	data := []string{user.Nickname}
+	c.SetJson(0, data, "登录成功")
+	return
 }
 
 //注册页面/account/registerTpl
