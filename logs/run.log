@@ -527,3 +527,399 @@
 2018/07/23 17:38:39.024 [I] [asm_amd64.s:2361] http server Running on http://:8098
 2018/07/23 17:39:52.205 [I] [asm_amd64.s:2361] http server Running on http://:8098
 2018/07/23 17:39:52.205 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/07/23 17:46:49.935 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/07/23 17:46:49.935 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/07/23 17:46:51.155 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/07/23 17:46:51.155 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/07/24 15:06:14.032 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/07/24 15:06:14.032 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/07/24 15:06:23.053 [I] [default.go:12]  
+2018/07/24 15:06:23.055 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 03:06:23] "GET / HTTP/1.0 200 0" 0.003561  Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 15:06:23.212 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 03:06:23] "GET /static/js/iview.min.js HTTP/1.0 304 0" 0.003003 http://www.mymallweb.com/ Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 15:06:23.215 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 03:06:23] "GET /static/js/jQuery.js HTTP/1.0 304 0" 0.005817 http://www.mymallweb.com/ Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 15:06:23.215 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 03:06:23] "GET /static/js/jquery-cookies.js HTTP/1.0 304 0" 0.005092 http://www.mymallweb.com/ Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 15:06:23.219 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 03:06:23] "GET /static/js/sms.js HTTP/1.0 304 0" 0.000574 http://www.mymallweb.com/ Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 15:06:23.936 [I] [ajax.go:16]  
+2018/07/24 15:06:23.937 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 03:06:23] "GET /ajax/WelInc HTTP/1.0 200 0" 0.001613 http://www.mymallweb.com/ Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 15:06:24.564 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 03:06:24] "GET /static/img/favicon.ico HTTP/1.0 404 0" 0.009702 http://www.mymallweb.com/ Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 15:06:24.878 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 03:06:24] "GET /account/loginTpl HTTP/1.0 200 0" 0.001963 http://www.mymallweb.com/ Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 15:06:25.182 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 03:06:25] "GET /account/favicon.ico HTTP/1.0 404 0" 0.000582 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 15:06:34.373 [I] [account.go:43] {"username":"15372090344","password":"123123","_xsrf":"N161sWhRvpdt4AwJa8TgAgRPl7nNi0om"} 
+2018/07/24 15:06:34.373 [I] [account.go:60] 开始查询 
+2018/07/24 15:06:34.406 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 03:06:34] "POST /account/doLogin HTTP/1.0 200 0" 0.033795 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 15:07:40.753 [I] [account.go:43] {"username":"15372090344","password":"123123","_xsrf":"N161sWhRvpdt4AwJa8TgAgRPl7nNi0om"} 
+2018/07/24 15:07:40.753 [I] [account.go:60] 开始查询 
+2018/07/24 15:07:40.758 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 03:07:40] "POST /account/doLogin HTTP/1.0 200 0" 0.006109 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 15:08:26.038 [I] [account.go:43] {"username":"15372090344","password":"123123","_xsrf":"N161sWhRvpdt4AwJa8TgAgRPl7nNi0om"} 
+2018/07/24 15:08:26.038 [I] [account.go:60] 开始查询 
+2018/07/24 15:08:26.043 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 03:08:26] "POST /account/doLogin HTTP/1.0 200 0" 0.014283 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 15:08:27.672 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/07/24 15:08:27.672 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/07/24 15:08:30.995 [I] [account.go:43] {"username":"15372090344","password":"123123","_xsrf":"N161sWhRvpdt4AwJa8TgAgRPl7nNi0om"} 
+2018/07/24 15:08:30.995 [I] [account.go:60] 开始查询 
+2018/07/24 15:08:30.998 [I] [account.go:72] 15372090344 
+2018/07/24 15:08:30.999 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 03:08:30] "POST /account/doLogin HTTP/1.0 200 0" 0.004582 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 15:16:00.981 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/07/24 15:16:00.981 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/07/24 15:16:06.687 [I] [account.go:43] {"username":"15372090344","password":"123123","_xsrf":"N161sWhRvpdt4AwJa8TgAgRPl7nNi0om"} 
+2018/07/24 15:16:06.687 [I] [account.go:60] 开始查询 
+2018/07/24 15:16:06.692 [I] [account.go:72] <nil> 
+2018/07/24 15:16:06.693 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 03:16:06] "POST /account/doLogin HTTP/1.0 200 0" 0.006079 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 15:27:30.198 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/07/24 15:27:30.198 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/07/24 15:28:26.319 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/07/24 15:28:26.319 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/07/24 15:28:36.808 [I] [account.go:43] {"username":"15372090344","password":"123123","_xsrf":"N161sWhRvpdt4AwJa8TgAgRPl7nNi0om"} 
+2018/07/24 15:28:36.808 [I] [account.go:50] 15372090344 
+2018/07/24 15:28:36.808 [I] [account.go:61] 开始查询 
+2018/07/24 15:28:36.814 [I] [account.go:73] 15372090344 
+2018/07/24 15:28:36.814 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 03:28:36] "POST /account/doLogin HTTP/1.0 200 0" 0.007864 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 15:28:44.403 [I] [account.go:43] {"username":"15372090345","password":"123123","_xsrf":"N161sWhRvpdt4AwJa8TgAgRPl7nNi0om"} 
+2018/07/24 15:28:44.403 [I] [account.go:50] 15372090344 
+2018/07/24 15:28:44.403 [I] [account.go:61] 开始查询 
+2018/07/24 15:28:44.406 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 03:28:44] "POST /account/doLogin HTTP/1.0 200 0" 0.003803 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 15:29:11.910 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/07/24 15:29:11.910 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/07/24 15:29:27.983 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 03:29:27] "GET /favicon.ico HTTP/1.0 404 0" 0.005211 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 15:29:31.741 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 03:29:31] "GET /static/js/iview.min.js.map HTTP/1.0 404 0" 0.009677  Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1
+
+2018/07/24 15:29:50.678 [I] [account.go:43] {"username":"15372090345","password":"123123","_xsrf":"N161sWhRvpdt4AwJa8TgAgRPl7nNi0om"} 
+2018/07/24 15:29:50.679 [I] [account.go:60] 开始查询 
+2018/07/24 15:29:50.686 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 03:29:50] "POST /account/doLogin HTTP/1.0 200 0" 0.010206 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 15:34:41.079 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/07/24 15:34:41.079 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/07/24 15:34:49.960 [I] [account.go:43] {"username":"15372090345","password":"123123","_xsrf":"N161sWhRvpdt4AwJa8TgAgRPl7nNi0om"} 
+2018/07/24 15:34:49.960 [I] [account.go:60] 开始查询 
+2018/07/24 15:34:49.979 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 03:34:49] "POST /account/doLogin HTTP/1.0 200 0" 0.021228 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 15:34:57.680 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 03:34:57] "GET /account/loginTpl HTTP/1.0 200 0" 0.002724 http://www.mymallweb.com/ Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 15:34:57.778 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 03:34:57] "GET /static/css/iview.css HTTP/1.0 200 0" 0.002491 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 15:34:57.780 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 03:34:57] "GET /static/css/style.css HTTP/1.0 200 0" 0.002677 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 15:34:57.785 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 03:34:57] "GET /static/css/reset.css HTTP/1.0 200 0" 0.000398 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 15:34:57.789 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 03:34:57] "GET /static/js/jQuery.js HTTP/1.0 200 0" 0.001687 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 15:34:57.799 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 03:34:57] "GET /static/js/iview.min.js HTTP/1.0 200 0" 0.011791 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 15:34:57.799 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 03:34:57] "GET /static/js/vue.min.js HTTP/1.0 200 0" 0.011963 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 15:34:57.824 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 03:34:57] "GET /static/js/jquery-cookies.js HTTP/1.0 200 0" 0.000304 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 15:34:57.828 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 03:34:57] "GET /static/js/jquery.base64.min.js HTTP/1.0 200 0" 0.000496 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 15:34:57.828 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 03:34:57] "GET /static/js/sms.js HTTP/1.0 200 0" 0.000545 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 15:34:57.839 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 03:34:57] "GET /static/img/img-54.png HTTP/1.0 200 0" 0.001243 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 15:34:58.116 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 03:34:58] "GET /static/img/img-43.jpg HTTP/1.0 200 0" 0.002286 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 15:34:58.116 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 03:34:58] "GET /static/img/img-22.png HTTP/1.0 200 0" 0.001065 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 15:34:58.118 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 03:34:58] "GET /static/img/img-21.png HTTP/1.0 200 0" 0.000330 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 15:34:58.175 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 03:34:58] "GET /static/js/iview.min.js.map HTTP/1.0 404 0" 0.008417  Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 15:35:04.490 [I] [account.go:43] {"username":"15372090344","password":"123123","_xsrf":"N161sWhRvpdt4AwJa8TgAgRPl7nNi0om"} 
+2018/07/24 15:35:04.490 [I] [account.go:60] 开始查询 
+2018/07/24 15:35:04.495 [I] [account.go:72] 15372090344 
+2018/07/24 15:35:04.495 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 03:35:04] "POST /account/doLogin HTTP/1.0 200 0" 0.004794 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 16:36:46.333 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/07/24 16:36:46.333 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/07/24 16:45:12.460 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/07/24 16:45:12.460 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/07/24 16:45:16.651 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/07/24 16:45:16.651 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/07/24 16:45:28.873 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/07/24 16:45:28.873 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/07/24 16:46:03.431 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/07/24 16:46:03.431 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/07/24 16:46:11.748 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/07/24 16:46:11.748 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/07/24 16:46:16.745 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 04:46:16] "GET /account/loginTpl HTTP/1.0 200 0" 0.011259 http://www.mymallweb.com/ Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 16:46:16.824 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 04:46:16] "GET /static/css/iview.css HTTP/1.0 200 0" 0.004481 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 16:46:16.825 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 04:46:16] "GET /static/css/style.css HTTP/1.0 200 0" 0.003075 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 16:46:16.831 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 04:46:16] "GET /static/css/reset.css HTTP/1.0 200 0" 0.000529 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 16:46:16.833 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 04:46:16] "GET /static/js/vue.min.js HTTP/1.0 200 0" 0.001113 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 16:46:16.837 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 04:46:16] "GET /static/js/iview.min.js HTTP/1.0 200 0" 0.004559 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 16:46:16.845 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 04:46:16] "GET /static/js/jQuery.js HTTP/1.0 200 0" 0.001370 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 16:46:16.847 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 04:46:16] "GET /static/js/jquery-cookies.js HTTP/1.0 200 0" 0.000400 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 16:46:16.855 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 04:46:16] "GET /static/js/jquery.base64.min.js HTTP/1.0 200 0" 0.000360 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 16:46:16.857 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 04:46:16] "GET /static/js/sms.js HTTP/1.0 200 0" 0.001164 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 16:46:16.864 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 04:46:16] "GET /static/img/img-54.png HTTP/1.0 200 0" 0.000669 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 16:46:17.249 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 04:46:17] "GET /static/img/img-43.jpg HTTP/1.0 200 0" 0.001334 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 16:46:17.250 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 04:46:17] "GET /static/img/img-22.png HTTP/1.0 200 0" 0.000887 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 16:46:17.251 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 04:46:17] "GET /static/img/img-21.png HTTP/1.0 200 0" 0.000437 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 16:46:17.317 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 04:46:17] "GET /static/js/iview.min.js.map HTTP/1.0 404 0" 0.009929  Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 16:46:23.788 [I] [account.go:43] {"username":"15372090344","password":"123123","_xsrf":"kPKG1qEN6lV8P0th5ElKeA8b9C4IppM9"} 
+2018/07/24 16:46:23.790 [I] [account.go:60] 开始查询 
+2018/07/24 16:46:23.817 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 04:46:23] "POST /account/doLogin HTTP/1.0 200 0" 0.030606 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 16:46:57.840 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/07/24 16:46:57.840 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/07/24 16:47:00.846 [E] [server.go:2694] gob: name not registered for interface: "mymallweb/models.User"
+2018/07/24 16:47:00.846 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 04:47:00] "POST /account/doLogin HTTP/1.0 503 0" 0.004577 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 16:47:17.845 [E] [server.go:2694] gob: name not registered for interface: "mymallweb/models.User"
+2018/07/24 16:47:17.845 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 04:47:17] "POST /account/doLogin HTTP/1.0 503 0" 0.001297 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 16:47:30.222 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/07/24 16:47:30.222 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/07/24 16:47:41.912 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/07/24 16:47:41.912 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/07/24 16:47:43.671 [E] [server.go:2694] gob: name not registered for interface: "mymallweb/models.User"
+2018/07/24 16:47:43.672 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 04:47:43] "POST /account/doLogin HTTP/1.0 503 0" 0.001835 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 16:48:03.420 [E] [server.go:2694] gob: name not registered for interface: "mymallweb/models.User"
+2018/07/24 16:48:03.420 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 04:48:03] "POST /account/doLogin HTTP/1.0 503 0" 0.002167 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 16:48:05.645 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/07/24 16:48:05.645 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/07/24 16:48:08.014 [E] [server.go:2694] gob: name not registered for interface: "mymallweb/models.User"
+2018/07/24 16:48:08.015 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 04:48:08] "POST /account/doLogin HTTP/1.0 503 0" 0.001890 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 16:48:21.662 [E] [server.go:2694] gob: name not registered for interface: "mymallweb/models.User"
+2018/07/24 16:48:21.662 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 04:48:21] "POST /account/doLogin HTTP/1.0 503 0" 0.001737 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 16:48:22.693 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/07/24 16:48:22.693 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/07/24 16:48:27.054 [E] [server.go:2694] gob: name not registered for interface: "mymallweb/models.User"
+2018/07/24 16:48:27.055 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 04:48:27] "POST /account/doLogin HTTP/1.0 503 0" 0.002260 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 16:49:08.479 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/07/24 16:49:08.479 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/07/24 16:49:10.194 [E] [server.go:2694] gob: name not registered for interface: "mymallweb/models.User"
+2018/07/24 16:49:10.194 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 04:49:10] "POST /account/doLogin HTTP/1.0 503 0" 0.001222 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 16:51:37.799 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/07/24 16:51:37.800 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/07/24 16:51:42.293 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/07/24 16:51:42.293 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/07/24 16:51:55.987 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/07/24 16:51:55.987 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/07/24 16:52:06.053 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/07/24 16:52:06.053 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/07/24 16:53:01.275 [I] [account.go:48] {"username":"15372090344","password":"123123","_xsrf":"kPKG1qEN6lV8P0th5ElKeA8b9C4IppM9"} 
+2018/07/24 16:53:01.275 [I] [account.go:65] 开始查询 
+2018/07/24 16:53:01.278 [I] [account.go:79] {0 0 0 0 0 member  0    $.1f9f7bcc3141a4ddb8c0ea11e10ac846 5a427c   15372090344         0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 } 
+2018/07/24 16:53:01.278 [I] [account.go:82] {0 0 0 0 0 member  0    $.1f9f7bcc3141a4ddb8c0ea11e10ac846 5a427c   15372090344         0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 } 
+2018/07/24 16:53:01.278 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 04:53:01] "POST /account/doLogin HTTP/1.0 200 0" 0.005719 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 16:53:25.910 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/07/24 16:53:25.910 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/07/24 16:54:00.180 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/07/24 16:54:00.180 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/07/24 16:54:09.239 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/07/24 16:54:09.239 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/07/24 16:54:11.470 [I] [account.go:48] {"username":"15372090344","password":"123123","_xsrf":"kPKG1qEN6lV8P0th5ElKeA8b9C4IppM9"} 
+2018/07/24 16:54:11.470 [I] [account.go:65] 开始查询 
+2018/07/24 16:54:11.475 [I] [account.go:79] {0 0 0 0 0 member  0   15372090344 $.1f9f7bcc3141a4ddb8c0ea11e10ac846 5a427c   15372090344         0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 } 
+2018/07/24 16:54:11.475 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 04:54:11] "POST /account/doLogin HTTP/1.0 200 0" 0.007268 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:04:09.138 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:04:09] "GET /account/loginTpl HTTP/1.0 200 0" 0.004532 http://www.mymallweb.com/ Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:04:09.221 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:04:09] "GET /static/css/iview.css HTTP/1.0 200 0" 0.011752 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:04:09.224 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:04:09] "GET /static/css/style.css HTTP/1.0 200 0" 0.003723 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:04:09.228 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:04:09] "GET /static/js/jQuery.js HTTP/1.0 200 0" 0.001632 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:04:09.232 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:04:09] "GET /static/css/reset.css HTTP/1.0 200 0" 0.004503 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:04:09.241 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:04:09] "GET /static/js/vue.min.js HTTP/1.0 200 0" 0.013410 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:04:09.261 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:04:09] "GET /static/js/iview.min.js HTTP/1.0 200 0" 0.033048 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:04:09.262 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:04:09] "GET /static/js/sms.js HTTP/1.0 200 0" 0.015467 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:04:09.262 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:04:09] "GET /static/img/img-54.png HTTP/1.0 200 0" 0.001253 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:04:09.265 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:04:09] "GET /static/js/jquery-cookies.js HTTP/1.0 200 0" 0.018952 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:04:09.271 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:04:09] "GET /static/js/jquery.base64.min.js HTTP/1.0 200 0" 0.024829 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:04:09.615 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:04:09] "GET /static/img/img-43.jpg HTTP/1.0 200 0" 0.001468 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:04:09.616 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:04:09] "GET /static/img/img-21.png HTTP/1.0 200 0" 0.001959 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:04:09.616 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:04:09] "GET /static/img/img-22.png HTTP/1.0 200 0" 0.002325 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:04:09.670 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:04:09] "GET /static/js/iview.min.js.map HTTP/1.0 404 0" 0.002081  Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:04:16.708 [I] [account.go:48] {"username":"15372090344","password":"123123","_xsrf":"kPKG1qEN6lV8P0th5ElKeA8b9C4IppM9"} 
+2018/07/24 17:04:16.708 [I] [account.go:65] 开始查询 
+2018/07/24 17:04:16.720 [I] [account.go:79] {0 0 0 0 0 member  0   15372090344 $.1f9f7bcc3141a4ddb8c0ea11e10ac846 5a427c   15372090344         0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 } 
+2018/07/24 17:04:16.720 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:04:16] "POST /account/doLogin HTTP/1.0 200 0" 0.012808 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:04:16.757 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:04:16] "GET /account/SuccessTpl HTTP/1.0 200 0" 0.004759 http://www.mymallweb.com/account/loginTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:04:16.820 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:04:16] "GET /static/css/iview.css HTTP/1.0 200 0" 0.000278 http://www.mymallweb.com/account/SuccessTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:04:16.822 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:04:16] "GET /static/css/style.css HTTP/1.0 200 0" 0.000366 http://www.mymallweb.com/account/SuccessTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:04:16.826 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:04:16] "GET /static/css/reset.css HTTP/1.0 200 0" 0.000101 http://www.mymallweb.com/account/SuccessTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:04:16.831 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:04:16] "GET /static/js/vue.js HTTP/1.0 200 0" 0.002619 http://www.mymallweb.com/account/SuccessTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:04:16.831 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:04:16] "GET /static/js/jQuery.js HTTP/1.0 200 0" 0.002360 http://www.mymallweb.com/account/SuccessTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:04:16.832 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:04:16] "GET /static/js/iview.min.js HTTP/1.0 200 0" 0.003751 http://www.mymallweb.com/account/SuccessTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:04:16.890 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:04:16] "GET /static/js/jquery.easing.1.3.js HTTP/1.0 200 0" 0.001061 http://www.mymallweb.com/account/SuccessTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:04:16.890 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:04:16] "GET /static/js/html5.js HTTP/1.0 200 0" 0.001218 http://www.mymallweb.com/account/SuccessTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:04:16.892 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:04:16] "GET /static/js/prefixfree.min.js HTTP/1.0 200 0" 0.001923 http://www.mymallweb.com/account/SuccessTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:04:16.893 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:04:16] "GET /static/js/jquery.transit.js HTTP/1.0 200 0" 0.003777 http://www.mymallweb.com/account/SuccessTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:04:16.908 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:04:16] "GET /static/js/bocfe.js HTTP/1.0 200 0" 0.000712 http://www.mymallweb.com/account/SuccessTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:04:16.912 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:04:16] "GET /static/js/plug.preload.js HTTP/1.0 200 0" 0.000425 http://www.mymallweb.com/account/SuccessTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:04:16.913 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:04:16] "GET /static/js/jquery-cookies.js HTTP/1.0 200 0" 0.000093 http://www.mymallweb.com/account/SuccessTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:04:16.918 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:04:16] "GET /static/js/jquery.base64.min.js HTTP/1.0 200 0" 0.000067 http://www.mymallweb.com/account/SuccessTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:04:16.920 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:04:16] "GET /static/js/sms.js HTTP/1.0 200 0" 0.000128 http://www.mymallweb.com/account/SuccessTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:04:16.939 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:04:16] "GET /static/img/img-01.png HTTP/1.0 200 0" 0.000701 http://www.mymallweb.com/account/SuccessTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:04:16.942 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:04:16] "GET /static/img/img-01.jpg HTTP/1.0 200 0" 0.000466 http://www.mymallweb.com/account/SuccessTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:04:16.985 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:04:16] "GET /static/img/img-02.jpg HTTP/1.0 200 0" 0.000679 http://www.mymallweb.com/account/SuccessTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:04:16.986 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:04:16] "GET /static/img/img-23.png HTTP/1.0 200 0" 0.000504 http://www.mymallweb.com/account/SuccessTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:04:16.992 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:04:16] "GET /static/img/img-24.png HTTP/1.0 200 0" 0.000364 http://www.mymallweb.com/account/SuccessTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:04:17.020 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:04:17] "GET /static/img/img-25.png HTTP/1.0 200 0" 0.000539 http://www.mymallweb.com/account/SuccessTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:04:17.026 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:04:17] "GET /static/img/img-26.png HTTP/1.0 200 0" 0.000319 http://www.mymallweb.com/account/SuccessTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:04:17.032 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:04:17] "GET /static/img/img-03.jpg HTTP/1.0 200 0" 0.000397 http://www.mymallweb.com/account/SuccessTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:04:17.278 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:04:17] "GET /static/js/iview.min.js.map HTTP/1.0 404 0" 0.001193  Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:04:17.406 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:04:17] "GET /static/css/iview.css HTTP/1.0 200 0" 0.000266 http://www.mymallweb.com/account/SuccessTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:04:17.409 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:04:17] "GET /static/css/style.css HTTP/1.0 200 0" 0.000149 http://www.mymallweb.com/account/SuccessTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:04:17.409 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:04:17] "GET /static/css/reset.css HTTP/1.0 200 0" 0.000098 http://www.mymallweb.com/account/SuccessTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:04:17.411 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:04:17] "GET /static/img/img-12.png HTTP/1.0 200 0" 0.000523 http://www.mymallweb.com/static/css/style.css Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:04:17.413 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:04:17] "GET /static/img/img-27.png HTTP/1.0 200 0" 0.000336 http://www.mymallweb.com/static/css/style.css Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:04:17.413 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:04:17] "GET /static/img/img-09.png HTTP/1.0 200 0" 0.000609 http://www.mymallweb.com/static/css/style.css Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:04:17.427 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:04:17] "GET /static/css/fonts/ionicons.ttf?v=2.0.0 HTTP/1.0 200 0" 0.001909 http://www.mymallweb.com/static/css/iview.css Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:04:17.429 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:04:17] "GET /static/img/img-03.png HTTP/1.0 200 0" 0.000290 http://www.mymallweb.com/static/css/style.css Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:04:17.432 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:04:17] "GET /static/img/img-02.png HTTP/1.0 200 0" 0.000284 http://www.mymallweb.com/static/css/style.css Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:05:05.553 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:05:05] "GET /account/SuccessTpl HTTP/1.0 200 0" 0.004233 http://www.mymallweb.com/account/SuccessTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:05:05.664 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:05:05] "GET /static/css/iview.css HTTP/1.0 200 0" 0.000263 http://www.mymallweb.com/account/SuccessTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:05:05.666 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:05:05] "GET /static/css/style.css HTTP/1.0 200 0" 0.000196 http://www.mymallweb.com/account/SuccessTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:05:05.666 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:05:05] "GET /static/css/reset.css HTTP/1.0 200 0" 0.000071 http://www.mymallweb.com/account/SuccessTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:05:05.667 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:05:05] "GET /static/js/vue.js HTTP/1.0 200 0" 0.000339 http://www.mymallweb.com/account/SuccessTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:05:05.668 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:05:05] "GET /static/js/jQuery.js HTTP/1.0 200 0" 0.000146 http://www.mymallweb.com/account/SuccessTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:05:05.668 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:05:05] "GET /static/js/iview.min.js HTTP/1.0 200 0" 0.000540 http://www.mymallweb.com/account/SuccessTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:05:05.702 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:05:05] "GET /static/js/jquery.easing.1.3.js HTTP/1.0 200 0" 0.000173 http://www.mymallweb.com/account/SuccessTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:05:05.715 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:05:05] "GET /static/js/jquery.transit.js HTTP/1.0 200 0" 0.000134 http://www.mymallweb.com/account/SuccessTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:05:05.719 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:05:05] "GET /static/js/prefixfree.min.js HTTP/1.0 200 0" 0.000109 http://www.mymallweb.com/account/SuccessTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:05:05.726 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:05:05] "GET /static/js/html5.js HTTP/1.0 200 0" 0.000077 http://www.mymallweb.com/account/SuccessTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:05:05.727 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:05:05] "GET /static/js/bocfe.js HTTP/1.0 200 0" 0.000095 http://www.mymallweb.com/account/SuccessTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:05:05.729 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:05:05] "GET /static/js/plug.preload.js HTTP/1.0 200 0" 0.000099 http://www.mymallweb.com/account/SuccessTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:05:05.732 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:05:05] "GET /static/js/jquery-cookies.js HTTP/1.0 200 0" 0.000062 http://www.mymallweb.com/account/SuccessTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:05:05.735 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:05:05] "GET /static/js/jquery.base64.min.js HTTP/1.0 200 0" 0.000071 http://www.mymallweb.com/account/SuccessTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:05:05.736 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:05:05] "GET /static/js/sms.js HTTP/1.0 200 0" 0.000232 http://www.mymallweb.com/account/SuccessTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:05:05.744 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:05:05] "GET /static/img/img-01.png HTTP/1.0 200 0" 0.000111 http://www.mymallweb.com/account/SuccessTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:05:05.746 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:05:05] "GET /static/img/img-01.jpg HTTP/1.0 200 0" 0.000102 http://www.mymallweb.com/account/SuccessTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:05:06.205 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:05:06] "GET /static/js/iview.min.js.map HTTP/1.0 404 0" 0.000666  Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:05:06.219 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:05:06] "GET /static/img/img-23.png HTTP/1.0 200 0" 0.000053 http://www.mymallweb.com/account/SuccessTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:05:06.219 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:05:06] "GET /static/img/img-02.jpg HTTP/1.0 200 0" 0.000128 http://www.mymallweb.com/account/SuccessTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:05:06.219 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:05:06] "GET /static/img/img-24.png HTTP/1.0 200 0" 0.000077 http://www.mymallweb.com/account/SuccessTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:05:06.220 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:05:06] "GET /static/img/img-25.png HTTP/1.0 200 0" 0.000075 http://www.mymallweb.com/account/SuccessTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:05:06.221 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:05:06] "GET /static/img/img-03.jpg HTTP/1.0 200 0" 0.000099 http://www.mymallweb.com/account/SuccessTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:05:06.221 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:05:06] "GET /static/img/img-26.png HTTP/1.0 200 0" 0.000037 http://www.mymallweb.com/account/SuccessTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:05:06.244 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:05:06] "GET /static/css/iview.css HTTP/1.0 200 0" 0.000284 http://www.mymallweb.com/account/SuccessTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:05:06.245 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:05:06] "GET /static/css/style.css HTTP/1.0 200 0" 0.000289 http://www.mymallweb.com/account/SuccessTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:05:06.245 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:05:06] "GET /static/css/reset.css HTTP/1.0 200 0" 0.000070 http://www.mymallweb.com/account/SuccessTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:05:06.430 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:05:06] "GET /static/img/img-12.png HTTP/1.0 200 0" 0.000097 http://www.mymallweb.com/static/css/style.css Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:05:06.432 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:05:06] "GET /static/img/img-27.png HTTP/1.0 200 0" 0.000066 http://www.mymallweb.com/static/css/style.css Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:05:06.430 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:05:06] "GET /static/img/img-09.png HTTP/1.0 200 0" 0.000076 http://www.mymallweb.com/static/css/style.css Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:05:06.437 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:05:06] "GET /static/img/img-02.png HTTP/1.0 200 0" 0.000083 http://www.mymallweb.com/static/css/style.css Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:05:06.436 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:05:06] "GET /static/img/img-03.png HTTP/1.0 200 0" 0.000064 http://www.mymallweb.com/static/css/style.css Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+
+2018/07/24 17:05:06.462 [D] [server.go:2694] 127.0.0.1 - - [24/Jul/2018 05:05:06] "GET /static/css/fonts/ionicons.ttf?v=2.0.0 HTTP/1.0 200 0" 0.000248 http://www.mymallweb.com/static/css/iview.css Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36
+

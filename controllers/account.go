@@ -9,12 +9,17 @@ import (
 	"github.com/astaxie/beego/orm"
 	"mymallweb/models"
 	"mymallweb/library/helper"
+	"encoding/gob"
 )
 
 type AccountController struct {
 	BaseController
 }
 
+func init()  {
+	var user models.User
+	gob.Register(user)
+}
 
 //登录页面
 func (c *AccountController) LoginTpl() {
@@ -58,7 +63,7 @@ func (c *AccountController) DoLogin() {
 	orm.Debug = true
 	o := orm.NewOrm()
 	beego.Info("开始查询")
-	err = o.Raw("SELECT nickname,password,salt,role FROM `scn_user` WHERE username = ? OR email = ? OR mobile = ? and role='member' limit 1", account_name).QueryRow(&user)
+	err = o.Raw("SELECT nickname,password,salt,role,username FROM `scn_user` WHERE username = ? OR email = ? OR mobile = ? and role='member' limit 1", account_name).QueryRow(&user)
 	if err != nil {
 		c.SetJson(1, nil, "此用户不存在，请确认后重试")
 		return
@@ -68,8 +73,13 @@ func (c *AccountController) DoLogin() {
 		c.SetJson(1, nil, "用户密码不正确")
 		return
 	}
-	data := []string{user.Nickname}
-	c.SetJson(0, data, "登录成功")
+	c.SetSession("USER_LOGIN_VALUE",user)
+	res := map[string]string{} //声明空数组
+	//os.Exit(1) //调试用
+	beego.Info(user)
+	res["nickname"] = user.Nickname
+	res["username"] = user.Username
+	c.SetJson(0, res, "登录成功")
 	return
 }
 
