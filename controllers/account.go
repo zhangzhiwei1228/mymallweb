@@ -10,12 +10,12 @@ import (
 	"mymallweb/models"
 	"mymallweb/library/helper"
 	"encoding/gob"
+	"fmt"
 )
 
 type AccountController struct {
 	BaseController
 }
-
 func init()  {
 	var user models.User
 	gob.Register(user)
@@ -38,7 +38,7 @@ func (c *AccountController) SuccessTpl() {
 	c.Data["webTitle"] = "zzwrdShop专卖"
 	c.TplName = "login/loginSuccess.tpl"
 	c.LayoutSections = make(map[string]string)
-	c.LayoutSections["header_n"] = "inc/header_n.tpl"
+	c.LayoutSections["header_n"] = "inc/header_success.tpl"
 	c.LayoutSections["footer"] = "inc/footer.tpl"
 }
 
@@ -63,7 +63,7 @@ func (c *AccountController) DoLogin() {
 	orm.Debug = true
 	o := orm.NewOrm()
 	beego.Info("开始查询")
-	err = o.Raw("SELECT nickname,password,salt,role,username FROM `scn_user` WHERE username = ? OR email = ? OR mobile = ? and role='member' limit 1", account_name).QueryRow(&user)
+	err = o.Raw("SELECT id,nickname,password,salt,role,username FROM `scn_user` WHERE username = ? OR email = ? OR mobile = ? and role='member' limit 1", account_name).QueryRow(&user)
 	if err != nil {
 		c.SetJson(1, nil, "此用户不存在，请确认后重试")
 		return
@@ -73,10 +73,20 @@ func (c *AccountController) DoLogin() {
 		c.SetJson(1, nil, "用户密码不正确")
 		return
 	}
-	c.SetSession("USER_LOGIN_VALUE",user)
+	/*sessionData := map[string]string{} //声明空数组
+	sessionData["username"] = user.Username
+	sessionData["nickname"] = user.Nickname
+	sessionData["role"] = user.Role
+	sessionData["userid"] = string(user.Id)*/
+
+	sessionData := map[string]string{"username": user.Username,"nickname":user.Nickname,"role":user.Role}
+	sessionJson, _ := json.Marshal(sessionData)
+	beego.Info(sessionData["username"])
+	fmt.Print(sessionJson)
+	c.SetSession("USER_LOGIN_VALUE",sessionJson)
+	c.SetSession("USER_KEY_USERID",user.Id)
 	res := map[string]string{} //声明空数组
 	//os.Exit(1) //调试用
-	beego.Info(user)
 	res["nickname"] = user.Nickname
 	res["username"] = user.Username
 	c.SetJson(0, res, "登录成功")
