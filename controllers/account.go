@@ -10,8 +10,8 @@ import (
 	"mymallweb/models"
 	"mymallweb/library/helper"
 	"encoding/gob"
-	"fmt"
 )
+var accountInfo map[string]interface{}
 
 type AccountController struct {
 	BaseController
@@ -73,17 +73,14 @@ func (c *AccountController) DoLogin() {
 		c.SetJson(1, nil, "用户密码不正确")
 		return
 	}
-	/*sessionData := map[string]string{} //声明空数组
-	sessionData["username"] = user.Username
-	sessionData["nickname"] = user.Nickname
-	sessionData["role"] = user.Role
-	sessionData["userid"] = string(user.Id)*/
-
-	sessionData := map[string]string{"username": user.Username,"nickname":user.Nickname,"role":user.Role}
-	sessionJson, _ := json.Marshal(sessionData)
-	beego.Info(sessionData["username"])
-	fmt.Print(sessionJson)
-	c.SetSession("USER_LOGIN_VALUE",sessionJson)
+	sessionData := map[string]interface{}{"username": user.Username,"nickname":user.Nickname,"role":user.Role}
+	jsonSessionData, err := json.Marshal(sessionData)
+	if err != nil {
+		beego.Error("json.Marshal failed:", err)
+		return
+	}
+	beego.Info(string(jsonSessionData))
+	c.SetSession("USER_LOGIN_VALUE",string(jsonSessionData))
 	c.SetSession("USER_KEY_USERID",user.Id)
 	res := map[string]string{} //声明空数组
 	//os.Exit(1) //调试用
@@ -112,4 +109,24 @@ func (c *AccountController) DoRegister() {
 		c.Ctx.WriteString("username is empty")
 		return
 	}
+}
+//检查是否登录
+func (c *AccountController) CheckInfo()  {
+	var code int
+	SessonInfo := c.GetSession("USER_LOGIN_VALUE")
+	var SessionInfoStr string
+	beego.Info(SessonInfo)
+	if SessonInfo != nil {
+		switch v := SessonInfo.(type) {
+		case string:
+			SessionInfoStr = string(v)
+		}
+		json.Unmarshal([]byte(SessionInfoStr), &accountInfo)
+		beego.Info(accountInfo)
+		code = 1
+	} else {
+		code = 0
+	}
+	c.SetJson(code,accountInfo,"")
+	return
 }

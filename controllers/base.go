@@ -12,10 +12,7 @@ import (
 type BaseController struct {
 	beego.Controller
 }
-
-func Init(c *BaseController)  {
-
-}
+func Init(c *BaseController)  {}
 func (c *BaseController) CheckXSRFCookie() bool {
 	postData := map[string]string{ "_xsrf": ""}
 	err := json.Unmarshal(c.Ctx.Input.RequestBody, &postData)

@@ -9,8 +9,20 @@
             <p>您好，123消费网欢迎您的来到！</p>
             <h2>400-888-8888</h2>
             <ul>
-                <li><a href="/account/loginTpl">登陆</a></li>
-                <li><a href="/account/registerTpl">注册</a></li>
+                <li v-if="accountInfo">
+                    <Dropdown>
+                        <a href="javascript:void(0)">
+                            {{accountInfo.nickname}}
+                            <Icon type="arrow-down-b"></Icon>
+                        </a>
+                        <Dropdown-menu slot="list">
+                            <Dropdown-item>驴打滚</Dropdown-item>
+                            <Dropdown-item>炸酱面</Dropdown-item>
+                        </Dropdown-menu>
+                    </Dropdown>
+                </li>
+                <li v-if="!accountInfo"><a href="/account/loginTpl">登陆</a></li>
+                <li v-if="!accountInfo"><a href="/account/registerTpl">注册</a></li>
                 <li><a href="">兑换商品</a></li>
                 <li><a href="">合作商家</a></li>
                 <li><a href="">帮助中心</a></li>
@@ -72,7 +84,7 @@
     </div>
 </div>
 <script>
-    new Vue({
+    var header_n = new Vue({
         el: '#header_n',
         data: {
             typeList: [
@@ -146,13 +158,24 @@
                 ],
             ],
             keyWord: '',
-            selectType: 1
+            selectType: 1,
+            username:'',
+            accountInfo:{}
         },
         methods: {
+            init:function () {
+                sms.fpost('/account/checkInfo', {}, function (data) {
+                    header_n.accountInfo = data
+                    console.log(data)
+                }, function (code, msg) {
+
+                });
+            },
             searchPro:function () {
                 console.log(this.keyWord)
                 console.log(this.selectType)
             },
         }
-    })
+    });
+    header_n.init()
 </script>
