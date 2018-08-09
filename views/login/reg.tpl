@@ -1,4 +1,9 @@
-<div class="bg">
+<style>
+    .reg-input-a{
+        border: none !important;
+    }
+</style>
+<div class="bg" id="rgTpl" v-cloak>
     <div class="reg">
         <h2 class="h2">会员注册</h2>
         <div class="fl">
@@ -6,37 +11,46 @@
                 <tr>
                     <td><span class="tit">手机号码：</span></td>
                     <td>
-                        <input placeholder="请输入手机号" class="reg-input-a" type="text">
+                        <i-input placeholder="请输入手机号" v-model="mobile" size="large" class="reg-input-a" type="number" style="border: none"></i-input>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span class="tit">图形验证码：</span></td>
+                    <td>
+                        <i-input placeholder="请输入验证码" v-model="captcha" size="large" class="reg-input-b" type="number" style="border: none"></i-input>
+                        <img :src="captchaInfo.img" style="margin-left: 23px;height: 36px;">
                     </td>
                 </tr>
                 <tr>
                     <td><span class="tit">验证码：</span></td>
                     <td>
-                        <input placeholder="请输入手机号" class="reg-input-b" type="text">
-                        <input value="发送验证码" class="reg-input-c" type="submit">
+                        <i-input placeholder="请输入验证码" v-model="verfiCode" size="large" class="reg-input-b" type="text" style="border: none"></i-input>
+                        <i-button type="primary" style="margin-left: 23px;height: 36px;">发送验证码</i-button>
                     </td>
                 </tr>
                 <tr>
                     <td><span class="tit">密码：</span></td>
                     <td>
-                        <input placeholder="请输入6-12位密码" class="reg-input-a" type="password">
+                        <i-input placeholder="请输入6-12位密码" v-model="password" size="large" class="reg-input-a" type="password" style="border: none"></i-input>
                     </td>
                 </tr>
                 <tr>
                     <td><span class="tit">确认密码：</span></td>
                     <td>
-                        <input placeholder="请再次输入密码" class="reg-input-a" type="password">
+                        <i-input placeholder="请再次输入密码" v-model="repassword" size="large" class="reg-input-a" type="password" style="border: none"></i-input>
                     </td>
                 </tr>
                 <tr>
                     <td><span class="tit">邀请码：</span></td>
                     <td>
-                        <input placeholder="请输入邀请人号码（填写获得20会员积分）" class="reg-input-a" type="text">
+                        <i-input placeholder="请输入邀请人号码（填写获得20会员积分）" v-model="invitationCode" size="large" class="reg-input-a" type="password" style="border: none"></i-input>
                     </td>
                 </tr>
                 <tr>
                     <td></td>
-                    <td><input value="立即注册" class="reg-input-d" type="submit"></td>
+                    <td>
+                        <i-button type="success" long @click="doRegister()" style="font-size: 18px;">注册</i-button>
+                    </td>
                 </tr>
             </table>
         </div>
@@ -47,3 +61,77 @@
         </div>
     </div>
 </div>
+<script>
+    var rgTpl = new Vue({
+        el: '#rgTpl',
+        data: {
+            username:'',
+            mobile:'',
+            verfiCode:'',//手机验证码
+            password:'',
+            repassword:'',
+            captcha:'',
+            captchaInfo:{},
+            invitationCode:'',//邀请码
+            is_error:false,
+            errMsg:'',
+            is_captcha:false
+        },
+        methods: {
+            init: function () {
+                this.getCaptcha();
+            },
+            getCaptcha:function () {
+                sms.fpost("/captcha/createCaptcha", {}, function (data) {
+                    rgTpl.captchaInfo=data
+                }, function (code, msg) {
+
+                });
+            },
+            doRegister:function () {
+                var url='/account/doRegister';
+                var p = {};
+                p.username = this.username;
+                p.password = this.password;
+                sms.fpost(url, p, function (data) {
+                    window.location.href='/account/SuccessTpl'
+                }, function (code, msg) {
+                    rgTpl.is_error = true;
+                    rgTpl.errMsg = msg;
+                    setTimeout(function () {
+                        rgTpl.is_error = false;
+                        rgTpl.errMsg = '';
+                    }, 1000);
+                });
+            }
+        },
+        watch:{
+            mobile:function (val) {
+
+            },
+            password:function (val) {
+
+            },
+            captcha:function (val) {
+                var url='/captcha/verfiyCaptcha';
+                var p = {};
+                p.val = val;
+                p.idkey = this.captchaInfo.captchaId
+                sms.fpost(url, p, function (data) {
+                    rgTpl.is_captcha = data
+                }, function (code, msg) {
+                    rgTpl.is_error = true;
+                    rgTpl.errMsg = msg;
+                    setTimeout(function () {
+                        rgTpl.is_error = false;
+                        rgTpl.errMsg = '';
+                    }, 1000);
+                });
+            },
+            verfiCode:function () {
+
+            },
+        }
+    });
+    rgTpl.init();
+</script>

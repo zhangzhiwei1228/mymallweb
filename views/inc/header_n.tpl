@@ -25,7 +25,7 @@
                         </Dropdown-menu>
                     </Dropdown>
                 </li>
-                <li v-if="!accountInfo"><a href="/account/loginTpl">登陆</a></li>
+                <li v-if="!accountInfo"><a href="/account/loginTpl">登录</a></li>
                 <li v-if="!accountInfo"><a href="/account/registerTpl">注册</a></li>
                 <li><a href="">兑换商品</a></li>
                 <li><a href="">合作商家</a></li>

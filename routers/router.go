@@ -15,4 +15,5 @@ func init() {
 	//beego.Include(&controllers.AjaxController{})
 	//beego.Include(&controllers.AccountController{})
 	beego.AutoRouter(&controllers.AccountController{})
+	beego.AutoRouter(&controllers.CaptchaController{})
 }
