@@ -1,3 +1,6 @@
+<style>
+</style>
+
 <div class="header" id="header_n" v-cloak>
     <div class="header-t">
         <div class="box w1190">
@@ -10,14 +13,15 @@
             <h2>400-888-8888</h2>
             <ul>
                 <li v-if="accountInfo">
-                    <Dropdown>
+                    <Dropdown trigger="click">
                         <a href="javascript:void(0)">
                             {{accountInfo.nickname}}
                             <Icon type="arrow-down-b"></Icon>
                         </a>
-                        <Dropdown-menu slot="list">
-                            <Dropdown-item>驴打滚</Dropdown-item>
-                            <Dropdown-item>炸酱面</Dropdown-item>
+                        <Dropdown-menu slot="list" style="height: auto">
+                            <Dropdown-item style="padding: 8px 32px;">个人中心</Dropdown-item>
+                            <Dropdown-item style="padding: 8px 38px;">购物车</Dropdown-item>
+                            <Dropdown-item style="padding: 8px 44px;" @click.native="logout()">退出</Dropdown-item>
                         </Dropdown-menu>
                     </Dropdown>
                 </li>
@@ -165,16 +169,23 @@
         methods: {
             init:function () {
                 sms.fpost('/account/checkInfo', {}, function (data) {
-                    header_n.accountInfo = data
-                    console.log(data)
+                    header_n.accountInfo = data;
                 }, function (code, msg) {
-
+                    header_n.accountInfo =null
                 });
             },
             searchPro:function () {
                 console.log(this.keyWord)
                 console.log(this.selectType)
             },
+            logout:function () {
+                sms.fpost('/account/logOut', {}, function (data) {
+                    window.location.href="/";
+                    //window.location.href="/account/loginTpl";
+                }, function (code, msg) {
+
+                });
+            }
         }
     });
     header_n.init()

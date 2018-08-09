@@ -11,7 +11,6 @@ import (
 	"mymallweb/library/helper"
 	"encoding/gob"
 )
-var accountInfo map[string]interface{}
 
 type AccountController struct {
 	BaseController
@@ -23,6 +22,10 @@ func init()  {
 
 //登录页面
 func (c *AccountController) LoginTpl() {
+	SessonInfo := c.GetSession("USER_LOGIN_VALUE")
+	if SessonInfo != nil {
+		c.Redirect("/",302 )
+	}
 	c.Layout = "inc/login_layout.tpl"
 	//c.Data["xsrf_token"] = c.XSRFToken()
 	c.Data["webTitle"] = "登录"
@@ -44,6 +47,10 @@ func (c *AccountController) SuccessTpl() {
 
 //登录提交的页面
 func (c *AccountController) DoLogin() {
+	SessonInfo := c.GetSession("USER_LOGIN_VALUE")
+	if SessonInfo != nil {
+		c.Redirect("/",302 )
+	}
 	//哈希校验成功后 更新 auth_key
 	beego.Info(string(c.Ctx.Input.RequestBody))
 	postData := map[string]string{"username": "", "password": ""}
@@ -116,6 +123,7 @@ func (c *AccountController) CheckInfo()  {
 	SessonInfo := c.GetSession("USER_LOGIN_VALUE")
 	var SessionInfoStr string
 	beego.Info(SessonInfo)
+	var accountInfo map[string]interface{}
 	if SessonInfo != nil {
 		switch v := SessonInfo.(type) {
 		case string:
@@ -123,10 +131,18 @@ func (c *AccountController) CheckInfo()  {
 		}
 		json.Unmarshal([]byte(SessionInfoStr), &accountInfo)
 		beego.Info(accountInfo)
-		code = 1
-	} else {
 		code = 0
+	} else {
+		code = 1
 	}
 	c.SetJson(code,accountInfo,"")
+	return
+}
+func (c *AccountController)  LogOut(){
+	SessonInfo := c.GetSession("USER_LOGIN_VALUE")
+	if SessonInfo != nil {
+		c.DelSession("USER_LOGIN_VALUE")
+	}
+	c.SetJson(0,"","")
 	return
 }

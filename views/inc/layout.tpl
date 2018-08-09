@@ -17,20 +17,12 @@
     <link rel="stylesheet" type="text/css" href="/static/css/iview.css">
     <link rel="stylesheet" type="text/css" href="/static/css/style.css">
     <link rel="stylesheet" type="text/css" href="/static/css/reset.css">
-    <script type="text/javascript" src="/static/js/vue.js"></script>
+    <script type="text/javascript" src="/static/js/vue.min.js"></script>
     <script type="text/javascript" src="/static/js/iview.min.js"></script>
     <script type="text/javascript" src="/static/js/jQuery.js"></script>
-    <script type="text/javascript" src="/static/js/jquery.easing.1.3.js"></script>
-    <script type="text/javascript" src="/static/js/jquery.transit.js"></script>
-    <script type="text/javascript" src="/static/js/prefixfree.min.js"></script>
-    <script type="text/javascript" src="/static/js/html5.js"></script>
-    <script type="text/javascript" src="/static/js/bocfe.js"></script>
-    <script type="text/javascript" src="/static/js/plug.preload.js"></script>
     <script type="text/javascript" src="/static/js/jquery-cookies.js"></script>
     <script type="text/javascript" src="/static/js/jquery.base64.min.js"></script>
     <script type="text/javascript" src="/static/js/sms.js"></script>
-
-
 
 </head>
 <body>
