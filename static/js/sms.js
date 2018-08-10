@@ -307,9 +307,19 @@
             settings = $.extend(defaults, settings);
             sms.showLoading();
             var xsrf, xsrflist;
-            xsrf = $.cookie("_xsrf");
-            xsrflist = xsrf.split("|");
-            p._xsrf = $.base64.decode(xsrflist[0]);
+
+            try {
+                xsrf = $.cookie("_xsrf");
+                xsrflist = xsrf.split("|");
+                p._xsrf = $.base64.decode(xsrflist[0]);
+            } catch(err) {
+                window.location.reload()
+                return false;
+            }
+            /*finally {
+
+            }*/
+
             $.ajax({
                 cache: false,
                 url: url,

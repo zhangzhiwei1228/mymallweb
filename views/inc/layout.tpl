@@ -25,8 +25,15 @@
     <script type="text/javascript" src="/static/js/sms.js"></script>
 
 </head>
-<body>
+<body id="bodyContent" v-cloak>
 <<<.header_n>>>
 <<<.LayoutContent>>>
 <<<.footer>>>
 </body>
+<script>
+     new Vue({
+        el: '#bodyContent',
+        data: {},
+        methods: {}
+    });
+</script>
