@@ -85,7 +85,7 @@ func (c *CaptchaController) VerfiyCaptcha(){
 	}
 	idkey := postData["idkey"]
 	verifyValue := postData["val"]
-	verifyResult := base64Captcha.VerifyCaptcha(idkey, verifyValue)
+	verifyResult := base64Captcha.VerifyCaptchaAndIsClear(idkey, verifyValue,false)
 	beego.Info(verifyResult)
 	c.SetJson(0,verifyResult,"")
 	return

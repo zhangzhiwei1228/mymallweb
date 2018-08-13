@@ -33,7 +33,8 @@
                     <td><span class="tit">验证码：</span></td>
                     <td>
                         <i-input placeholder="请输入验证码" v-model="verfiCode" size="large" class="reg-input-b" type="number" style="border: none"></i-input>
-                        <i-button type="primary" style="margin-left: 23px;height: 36px;">发送验证码</i-button>
+                        <i-button type="primary" v-show="!is_send"style="margin-left: 23px;height: 36px;" @click="GetVerfiCode()">发送验证码</i-button>
+                        <i-button type="primary" v-show="is_send" disabled style="margin-left: 23px;height: 36px;" id="code_btn">发送验证码</i-button>
                     </td>
                 </tr>
                 <tr>
@@ -85,16 +86,19 @@
             is_error:false,
             errMsg:'',
             is_captcha:false,
+            is_send:false,
+            is_send_success:false,
         },
         methods: {
             init: function () {
                 this.getCaptcha();
+                checkCountdown();
             },
             getCaptcha:function () {
                 sms.fpost("/captcha/createCaptcha", {}, function (data) {
                     rgTpl.captchaInfo=data
                 }, function (code, msg) {
-                    this.showError("获取图形验证码错误，请刷新")
+                    rgTpl.showError("获取图形验证码错误，请刷新")
                     return false
                 });
             },
@@ -106,7 +110,7 @@
                 sms.fpost(url, p, function (data) {
                     window.location.href='/account/SuccessTpl'
                 }, function (code, msg) {
-                    this.showError(msg);
+                    rgTpl.showError(msg);
                     return false
                 });
             },
@@ -118,12 +122,38 @@
                     rgTpl.is_error = false;
                     rgTpl.errMsg = '';
                 }, time);
+            },
+            GetVerfiCode:function () {
+                if(!(/^1[34578]\d{9}$/.test(this.mobile))) {
+                    this.showError("手机号码格式有误，请重填")
+                    return false
+                }
+                if(!this.is_captcha || !this.captcha) {
+                    this.showError("图形验证码输入不正确")
+                    return false
+                }
+                var url='/account/getVerfiCode';
+                var p = {};
+                p.mobile = this.mobile;
+                p.captchaVal = this.captcha;
+                p.is_captcha = "" +this.is_captcha + "";
+                p.captchaKey = this.captchaInfo.captchaId
+                sms.fpost(url, p, function (data) {
+                    rgTpl.is_send=true
+                    rgTpl.is_send_success=true
+                    var date = new Date();
+                    addCookie("secondsremained",date.toGMTString(),120);//添加cookie记录,有效时间120s
+                    setCoutDown(date,$('#code_btn'));
+                }, function (code, msg) {
+                    rgTpl.showError(msg);
+                    return false
+                });
             }
         },
         watch:{
             mobile:function (val) {
-                if(!(/^1[34578]\d{9}$/.test(val))){
-                    //this.showError("手机号码格式有误，请重填")
+                if(val.length === 11 && !(/^1[34578]\d{9}$/.test(val))){
+                    this.showError("手机号码格式有误，请重填")
                     return false
                 }
             },
@@ -156,5 +186,43 @@
             },
         }
     });
+
     rgTpl.init();
+
+    function checkCountdown(){
+        var secondsremained =     $.cookie("secondsremained");
+        if(secondsremained){
+            rgTpl.is_send=true
+            var date = new Date(unescape(secondsremained));
+            setCoutDown(date,$("#code_btn"));
+        }
+    }
+    var nowDate = null;
+    var time_difference = 0;
+    var count_down = 0;
+    function setCoutDown(date,obj) {
+        nowDate = new Date();
+        time_difference = ((nowDate- date)/1000).toFixed(0);
+        count_down = 120 - time_difference;
+
+        if(count_down<=0){
+            rgTpl.is_send = false;
+            addCookie("secondsremained","",120);//添加cookie记录,有效时间60s
+            return;
+        }
+        obj.html(count_down + "秒后重发");
+        obj.val(count_down + "秒后重发");
+        setTimeout(function() { setCoutDown(date,obj) },1000) //每1000毫秒执行一次
+    }
+    function addCookie(name,value,expiresHours){
+        //判断是否设置过期时间,0代表关闭浏览器时失效
+        if(expiresHours>0){
+            var date=new Date();
+            date.setTime(date.getTime()+expiresHours*1000);
+            $.cookie(name, escape(value), {expires: date});
+        }else{
+            $.cookie(name, escape(value));
+        }
+    }
+
 </script>

@@ -35,8 +35,9 @@ func Connect() {
 		}
 	}
 
-	maxIdleConn, _ := beego.AppConfig.Int("mysql_max_idle_conn")
-	maxOpenConn, _ := beego.AppConfig.Int("mysql_max_open_conn")
+	maxIdleConn, _ := beego.AppConfig.Int("mysql_max_idle_conn")// 参数4(可选)  设置最大空闲连接
+	maxOpenConn, _ := beego.AppConfig.Int("mysql_max_open_conn")// 参数5(可选)  设置最大数据库连接 (go >= 1.2)
+
 	dbLink := fmt.Sprintf("%s:%s@tcp(%s:%s)/%s?charset=utf8", dbUser, dbPass, dbHost, dbPort, dbName) + "&loc=Asia%2FShanghai"
 	//utils.Display("dbLink", dbLink)
 	err := orm.RegisterDriver("mysql", orm.DRMySQL)
