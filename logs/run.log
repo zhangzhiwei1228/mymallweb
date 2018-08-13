@@ -17052,3 +17052,951 @@
 2018/08/13 15:33:37.690 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
 2018/08/13 15:33:57.419 [I] [asm_amd64.s:2361] http server Running on http://:8098
 2018/08/13 15:33:57.419 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 15:34:15.381 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 15:34:15.382 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 15:41:01.953 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:41:01] "GET /account/registerTpl HTTP/1.0 200 0" 0.006090  Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:41:01.992 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:41:01] "GET /static/css/iview.css HTTP/1.0 200 0" 0.003545 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:41:01.993 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:41:01] "GET /static/js/vue.min.js HTTP/1.0 200 0" 0.001656 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:41:01.998 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:41:01] "GET /static/js/iview.min.js HTTP/1.0 200 0" 0.007095 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:41:02.008 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:41:01] "GET /static/js/jQuery.js HTTP/1.0 200 0" 0.016728 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:41:02.008 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:41:01] "GET /static/css/reset.css HTTP/1.0 200 0" 0.016452 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:41:02.010 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:41:01] "GET /static/css/style.css HTTP/1.0 200 0" 0.018780 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:41:02.017 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:41:02] "GET /static/js/jquery-cookies.js HTTP/1.0 200 0" 0.000415 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:41:02.034 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:41:02] "GET /static/js/sms.js HTTP/1.0 200 0" 0.002129 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:41:02.034 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:41:02] "GET /static/js/jquery.base64.min.js HTTP/1.0 200 0" 0.001825 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:41:02.077 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:41:02] "GET /static/img/img-54.png HTTP/1.0 200 0" 0.000834 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:41:02.258 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:41:02] "GET /static/js/iview.min.js.map HTTP/1.0 404 0" 0.000503  Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:41:02.337 [I] [captcha.go:70] UASrrYVFtzBGkgqvfxDQ 
+2018/08/13 15:41:02.337 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:41:02] "POST /captcha/createCaptcha HTTP/1.0 200 0" 0.005343 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:41:06.774 [I] [captcha.go:79] {"val":"0","idkey":"UASrrYVFtzBGkgqvfxDQ","_xsrf":"r23PNzbyNG24QujxWzzoSECK5Qm4yC3B"} 
+2018/08/13 15:41:06.774 [I] [captcha.go:89] true 
+2018/08/13 15:41:06.775 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:41:06] "POST /captcha/verfiyCaptcha HTTP/1.0 200 0" 0.000936 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:41:15.220 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:41:15] "POST /account/getVerfiCode HTTP/1.0 200 0" 0.001398 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:41:27.074 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:41:27] "GET /static/css/fonts/ionicons.ttf?v=2.0.0 HTTP/1.0 200 0" 0.002098 http://www.mymallweb.com/static/css/iview.css Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:41:53.668 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:41:53] "GET /account/registerTpl HTTP/1.0 200 0" 0.002781  Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:41:53.693 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:41:53] "GET /static/css/iview.css HTTP/1.0 200 0" 0.000267 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:41:53.696 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:41:53] "GET /static/js/jQuery.js HTTP/1.0 200 0" 0.000257 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:41:53.696 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:41:53] "GET /static/css/style.css HTTP/1.0 200 0" 0.000201 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:41:53.696 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:41:53] "GET /static/css/reset.css HTTP/1.0 200 0" 0.000063 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:41:53.697 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:41:53] "GET /static/js/vue.min.js HTTP/1.0 200 0" 0.000627 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:41:53.703 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:41:53] "GET /static/js/iview.min.js HTTP/1.0 200 0" 0.000403 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:41:53.713 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:41:53] "GET /static/js/jquery-cookies.js HTTP/1.0 200 0" 0.000092 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:41:53.719 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:41:53] "GET /static/js/jquery.base64.min.js HTTP/1.0 200 0" 0.000068 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:41:53.721 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:41:53] "GET /static/js/sms.js HTTP/1.0 200 0" 0.000159 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:41:53.754 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:41:53] "GET /static/img/img-54.png HTTP/1.0 200 0" 0.000159 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:41:54.008 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:41:54] "GET /static/js/iview.min.js.map HTTP/1.0 404 0" 0.000669  Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:41:54.099 [I] [captcha.go:70] UnTV3BzcXZBEXHYqtVuY 
+2018/08/13 15:41:54.100 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:41:54] "POST /captcha/createCaptcha HTTP/1.0 200 0" 0.006546 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:42:00.206 [I] [captcha.go:79] {"val":"2","idkey":"UnTV3BzcXZBEXHYqtVuY","_xsrf":"r23PNzbyNG24QujxWzzoSECK5Qm4yC3B"} 
+2018/08/13 15:42:00.207 [I] [captcha.go:89] false 
+2018/08/13 15:42:00.207 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:42:00] "POST /captcha/verfiyCaptcha HTTP/1.0 200 0" 0.002296 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:42:00.978 [I] [captcha.go:79] {"val":"25","idkey":"UnTV3BzcXZBEXHYqtVuY","_xsrf":"r23PNzbyNG24QujxWzzoSECK5Qm4yC3B"} 
+2018/08/13 15:42:00.978 [I] [captcha.go:89] true 
+2018/08/13 15:42:00.978 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:42:00] "POST /captcha/verfiyCaptcha HTTP/1.0 200 0" 0.000590 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:43:04.413 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:43:04] "GET /static/css/fonts/ionicons.ttf?v=2.0.0 HTTP/1.0 200 0" 0.000277 http://www.mymallweb.com/static/css/iview.css Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:43:52.576 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:43:52] "GET /account/registerTpl HTTP/1.0 200 0" 0.003854  Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:43:52.610 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:43:52] "GET /static/css/iview.css HTTP/1.0 200 0" 0.000376 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:43:52.612 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:43:52] "GET /static/css/style.css HTTP/1.0 200 0" 0.000221 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:43:52.622 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:43:52] "GET /static/js/jQuery.js HTTP/1.0 200 0" 0.000158 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:43:52.622 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:43:52] "GET /static/css/reset.css HTTP/1.0 200 0" 0.000057 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:43:52.622 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:43:52] "GET /static/js/iview.min.js HTTP/1.0 200 0" 0.000310 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:43:52.623 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:43:52] "GET /static/js/vue.min.js HTTP/1.0 200 0" 0.000158 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:43:52.627 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:43:52] "GET /static/js/jquery-cookies.js HTTP/1.0 200 0" 0.000064 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:43:52.642 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:43:52] "GET /static/js/jquery.base64.min.js HTTP/1.0 200 0" 0.000069 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:43:52.655 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:43:52] "GET /static/js/sms.js HTTP/1.0 200 0" 0.000127 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:43:52.674 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:43:52] "GET /static/img/img-54.png HTTP/1.0 200 0" 0.000162 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:43:52.958 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:43:52] "GET /static/js/iview.min.js.map HTTP/1.0 404 0" 0.000600  Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:43:53.080 [I] [captcha.go:70] occaJej1GsEORAmK8r8H 
+2018/08/13 15:43:53.080 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:43:53] "POST /captcha/createCaptcha HTTP/1.0 200 0" 0.009979 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:44:00.131 [I] [captcha.go:79] {"val":"3","idkey":"occaJej1GsEORAmK8r8H","_xsrf":"r23PNzbyNG24QujxWzzoSECK5Qm4yC3B"} 
+2018/08/13 15:44:00.132 [I] [captcha.go:89] false 
+2018/08/13 15:44:00.132 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:44:00] "POST /captcha/verfiyCaptcha HTTP/1.0 200 0" 0.002723 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:44:00.313 [I] [captcha.go:79] {"val":"34","idkey":"occaJej1GsEORAmK8r8H","_xsrf":"r23PNzbyNG24QujxWzzoSECK5Qm4yC3B"} 
+2018/08/13 15:44:00.313 [I] [captcha.go:89] true 
+2018/08/13 15:44:00.313 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:44:00] "POST /captcha/verfiyCaptcha HTTP/1.0 200 0" 0.000594 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:44:01.379 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:44:01] "POST /account/getVerfiCode HTTP/1.0 200 0" 0.001172 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:44:17.752 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:44:17] "GET /static/css/fonts/ionicons.ttf?v=2.0.0 HTTP/1.0 200 0" 0.000312 http://www.mymallweb.com/static/css/iview.css Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:44:43.878 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:44:43] "GET /account/registerTpl HTTP/1.0 200 0" 0.004032  Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:44:43.914 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:44:43] "GET /static/js/iview.min.js HTTP/1.0 200 0" 0.000673 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:44:43.915 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:44:43] "GET /static/css/style.css HTTP/1.0 200 0" 0.000133 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:44:43.915 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:44:43] "GET /static/css/reset.css HTTP/1.0 200 0" 0.000058 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:44:43.915 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:44:43] "GET /static/js/jQuery.js HTTP/1.0 200 0" 0.000421 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:44:43.916 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:44:43] "GET /static/css/iview.css HTTP/1.0 200 0" 0.000409 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:44:43.916 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:44:43] "GET /static/js/vue.min.js HTTP/1.0 200 0" 0.000231 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:44:43.928 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:44:43] "GET /static/js/jquery-cookies.js HTTP/1.0 200 0" 0.000153 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:44:43.928 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:44:43] "GET /static/js/jquery.base64.min.js HTTP/1.0 200 0" 0.000078 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:44:43.934 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:44:43] "GET /static/js/sms.js HTTP/1.0 200 0" 0.000169 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:44:43.984 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:44:43] "GET /static/img/img-54.png HTTP/1.0 200 0" 0.000114 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:44:44.215 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:44:44] "GET /static/js/iview.min.js.map HTTP/1.0 404 0" 0.000544  Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:44:44.307 [I] [captcha.go:70] QmdQzA8JDexN662fCO3H 
+2018/08/13 15:44:44.308 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:44:44] "POST /captcha/createCaptcha HTTP/1.0 200 0" 0.005427 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:44:54.691 [I] [captcha.go:79] {"val":"1","idkey":"QmdQzA8JDexN662fCO3H","_xsrf":"r23PNzbyNG24QujxWzzoSECK5Qm4yC3B"} 
+2018/08/13 15:44:54.692 [I] [captcha.go:89] false 
+2018/08/13 15:44:54.692 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:44:54] "POST /captcha/verfiyCaptcha HTTP/1.0 200 0" 0.002341 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:44:55.382 [I] [captcha.go:79] {"val":"19","idkey":"QmdQzA8JDexN662fCO3H","_xsrf":"r23PNzbyNG24QujxWzzoSECK5Qm4yC3B"} 
+2018/08/13 15:44:55.382 [I] [captcha.go:89] false 
+2018/08/13 15:44:55.382 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:44:55] "POST /captcha/verfiyCaptcha HTTP/1.0 200 0" 0.000622 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:44:55.545 [I] [captcha.go:79] {"val":"190","idkey":"QmdQzA8JDexN662fCO3H","_xsrf":"r23PNzbyNG24QujxWzzoSECK5Qm4yC3B"} 
+2018/08/13 15:44:55.545 [I] [captcha.go:89] false 
+2018/08/13 15:44:55.546 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:44:55] "POST /captcha/verfiyCaptcha HTTP/1.0 200 0" 0.000567 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:45:16.497 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:45:16] "GET /static/css/fonts/ionicons.ttf?v=2.0.0 HTTP/1.0 200 0" 0.000256 http://www.mymallweb.com/static/css/iview.css Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:45:27.528 [I] [captcha.go:79] {"val":"10","idkey":"QmdQzA8JDexN662fCO3H","_xsrf":"r23PNzbyNG24QujxWzzoSECK5Qm4yC3B"} 
+2018/08/13 15:45:27.530 [I] [captcha.go:89] false 
+2018/08/13 15:45:27.530 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:45:27] "POST /captcha/verfiyCaptcha HTTP/1.0 200 0" 0.002650 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:45:28.389 [I] [captcha.go:79] {"val":"180","idkey":"QmdQzA8JDexN662fCO3H","_xsrf":"r23PNzbyNG24QujxWzzoSECK5Qm4yC3B"} 
+2018/08/13 15:45:28.390 [I] [captcha.go:89] true 
+2018/08/13 15:45:28.390 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:45:28] "POST /captcha/verfiyCaptcha HTTP/1.0 200 0" 0.000651 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:46:03.344 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:46:03] "POST /account/getVerfiCode HTTP/1.0 200 0" 0.003229 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:46:40.833 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:46:40] "GET /account/registerTpl HTTP/1.0 200 0" 0.003976  Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:46:40.865 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:46:40] "GET /static/css/iview.css HTTP/1.0 200 0" 0.000237 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:46:40.866 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:46:40] "GET /static/css/style.css HTTP/1.0 200 0" 0.001148 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:46:40.876 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:46:40] "GET /static/js/jQuery.js HTTP/1.0 200 0" 0.000139 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:46:40.877 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:46:40] "GET /static/js/iview.min.js HTTP/1.0 200 0" 0.000508 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:46:40.877 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:46:40] "GET /static/js/vue.min.js HTTP/1.0 200 0" 0.000131 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:46:40.877 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:46:40] "GET /static/css/reset.css HTTP/1.0 200 0" 0.000059 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:46:40.880 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:46:40] "GET /static/js/jquery-cookies.js HTTP/1.0 200 0" 0.000083 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:46:40.898 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:46:40] "GET /static/js/jquery.base64.min.js HTTP/1.0 200 0" 0.000080 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:46:40.921 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:46:40] "GET /static/js/sms.js HTTP/1.0 200 0" 0.000144 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:46:40.926 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:46:40] "GET /static/img/img-54.png HTTP/1.0 200 0" 0.000132 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:46:41.200 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:46:41] "GET /static/js/iview.min.js.map HTTP/1.0 404 0" 0.000585  Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:46:41.302 [I] [captcha.go:70] zBBDsavNT73fG48mcty1 
+2018/08/13 15:46:41.302 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:46:41] "POST /captcha/createCaptcha HTTP/1.0 200 0" 0.004643 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:47:12.296 [I] [captcha.go:79] {"val":"1","idkey":"zBBDsavNT73fG48mcty1","_xsrf":"r23PNzbyNG24QujxWzzoSECK5Qm4yC3B"} 
+2018/08/13 15:47:12.297 [I] [captcha.go:89] false 
+2018/08/13 15:47:12.297 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:47:12] "POST /captcha/verfiyCaptcha HTTP/1.0 200 0" 0.000585 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:47:12.519 [I] [captcha.go:79] {"val":"13","idkey":"zBBDsavNT73fG48mcty1","_xsrf":"r23PNzbyNG24QujxWzzoSECK5Qm4yC3B"} 
+2018/08/13 15:47:12.519 [I] [captcha.go:89] false 
+2018/08/13 15:47:12.519 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:47:12] "POST /captcha/verfiyCaptcha HTTP/1.0 200 0" 0.000602 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:47:12.909 [I] [captcha.go:79] {"val":"135","idkey":"zBBDsavNT73fG48mcty1","_xsrf":"r23PNzbyNG24QujxWzzoSECK5Qm4yC3B"} 
+2018/08/13 15:47:12.909 [I] [captcha.go:89] true 
+2018/08/13 15:47:12.909 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:47:12] "POST /captcha/verfiyCaptcha HTTP/1.0 200 0" 0.000553 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:47:25.174 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:47:25] "GET /static/css/fonts/ionicons.ttf?v=2.0.0 HTTP/1.0 200 0" 0.000534 http://www.mymallweb.com/static/css/iview.css Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:48:11.828 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:48:11] "GET /account/registerTpl HTTP/1.0 200 0" 0.004503  Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:48:11.863 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:48:11] "GET /static/css/iview.css HTTP/1.0 200 0" 0.000270 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:48:11.874 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:48:11] "GET /static/js/vue.min.js HTTP/1.0 200 0" 0.000182 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:48:11.874 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:48:11] "GET /static/js/jquery-cookies.js HTTP/1.0 200 0" 0.000167 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:48:11.874 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:48:11] "GET /static/css/style.css HTTP/1.0 200 0" 0.000140 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:48:11.876 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:48:11] "GET /static/js/jQuery.js HTTP/1.0 200 0" 0.000234 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:48:11.876 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:48:11] "GET /static/css/reset.css HTTP/1.0 200 0" 0.000070 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:48:11.878 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:48:11] "GET /static/js/iview.min.js HTTP/1.0 200 0" 0.001441 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:48:11.916 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:48:11] "GET /static/js/jquery.base64.min.js HTTP/1.0 200 0" 0.000073 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:48:11.918 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:48:11] "GET /static/js/sms.js HTTP/1.0 200 0" 0.000130 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:48:11.939 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:48:11] "GET /static/img/img-54.png HTTP/1.0 200 0" 0.000158 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:48:12.185 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:48:12] "GET /static/js/iview.min.js.map HTTP/1.0 404 0" 0.000536  Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:48:12.312 [I] [captcha.go:70] kJuqhHfU18BoNdmmSeMM 
+2018/08/13 15:48:12.313 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:48:12] "POST /captcha/createCaptcha HTTP/1.0 200 0" 0.008299 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:48:22.983 [I] [captcha.go:79] {"val":"1","idkey":"kJuqhHfU18BoNdmmSeMM","_xsrf":"r23PNzbyNG24QujxWzzoSECK5Qm4yC3B"} 
+2018/08/13 15:48:22.984 [I] [captcha.go:89] false 
+2018/08/13 15:48:22.985 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:48:22] "POST /captcha/verfiyCaptcha HTTP/1.0 200 0" 0.002335 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:48:25.730 [I] [captcha.go:79] {"val":"12","idkey":"kJuqhHfU18BoNdmmSeMM","_xsrf":"r23PNzbyNG24QujxWzzoSECK5Qm4yC3B"} 
+2018/08/13 15:48:25.730 [I] [captcha.go:89] false 
+2018/08/13 15:48:25.730 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:48:25] "POST /captcha/verfiyCaptcha HTTP/1.0 200 0" 0.000549 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:48:28.266 [I] [captcha.go:79] {"val":"121","idkey":"kJuqhHfU18BoNdmmSeMM","_xsrf":"r23PNzbyNG24QujxWzzoSECK5Qm4yC3B"} 
+2018/08/13 15:48:28.266 [I] [captcha.go:89] false 
+2018/08/13 15:48:28.266 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:48:28] "POST /captcha/verfiyCaptcha HTTP/1.0 200 0" 0.000533 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:48:36.209 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:48:36] "GET /static/css/fonts/ionicons.ttf?v=2.0.0 HTTP/1.0 200 0" 0.000216 http://www.mymallweb.com/static/css/iview.css Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:48:41.439 [I] [captcha.go:79] {"val":"11","idkey":"kJuqhHfU18BoNdmmSeMM","_xsrf":"r23PNzbyNG24QujxWzzoSECK5Qm4yC3B"} 
+2018/08/13 15:48:41.439 [I] [captcha.go:89] false 
+2018/08/13 15:48:41.439 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:48:41] "POST /captcha/verfiyCaptcha HTTP/1.0 200 0" 0.000656 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:48:41.660 [I] [captcha.go:79] {"val":"111","idkey":"kJuqhHfU18BoNdmmSeMM","_xsrf":"r23PNzbyNG24QujxWzzoSECK5Qm4yC3B"} 
+2018/08/13 15:48:41.660 [I] [captcha.go:89] true 
+2018/08/13 15:48:41.660 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:48:41] "POST /captcha/verfiyCaptcha HTTP/1.0 200 0" 0.000612 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:48:43.682 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:48:43] "POST /account/getVerfiCode HTTP/1.0 200 0" 0.000957 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:51:06.280 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:51:06] "GET /account/registerTpl HTTP/1.0 200 0" 0.003888  Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:51:06.307 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:51:06] "GET /static/css/iview.css HTTP/1.0 200 0" 0.000414 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:51:06.313 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:51:06] "GET /static/css/style.css HTTP/1.0 200 0" 0.000151 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:51:06.313 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:51:06] "GET /static/css/reset.css HTTP/1.0 200 0" 0.000063 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:51:06.317 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:51:06] "GET /static/js/vue.min.js HTTP/1.0 200 0" 0.000220 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:51:06.330 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:51:06] "GET /static/js/iview.min.js HTTP/1.0 200 0" 0.000389 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:51:06.333 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:51:06] "GET /static/js/jQuery.js HTTP/1.0 200 0" 0.000184 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:51:06.340 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:51:06] "GET /static/js/jquery-cookies.js HTTP/1.0 200 0" 0.000090 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:51:06.340 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:51:06] "GET /static/js/jquery.base64.min.js HTTP/1.0 200 0" 0.000056 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:51:06.355 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:51:06] "GET /static/js/sms.js HTTP/1.0 200 0" 0.000398 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:51:06.372 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:51:06] "GET /static/img/img-54.png HTTP/1.0 200 0" 0.000210 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:51:06.584 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:51:06] "GET /static/js/iview.min.js.map HTTP/1.0 404 0" 0.000546  Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:51:06.667 [I] [captcha.go:70] MDf86vUKYUX723sSUKGe 
+2018/08/13 15:51:06.667 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:51:06] "POST /captcha/createCaptcha HTTP/1.0 200 0" 0.005143 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:51:13.878 [I] [captcha.go:79] {"val":"8","idkey":"MDf86vUKYUX723sSUKGe","_xsrf":"r23PNzbyNG24QujxWzzoSECK5Qm4yC3B"} 
+2018/08/13 15:51:13.878 [I] [captcha.go:89] false 
+2018/08/13 15:51:13.878 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:51:13] "POST /captcha/verfiyCaptcha HTTP/1.0 200 0" 0.000743 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:51:14.093 [I] [captcha.go:79] {"val":"88","idkey":"MDf86vUKYUX723sSUKGe","_xsrf":"r23PNzbyNG24QujxWzzoSECK5Qm4yC3B"} 
+2018/08/13 15:51:14.093 [I] [captcha.go:89] true 
+2018/08/13 15:51:14.094 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:51:14] "POST /captcha/verfiyCaptcha HTTP/1.0 200 0" 0.000832 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:51:15.341 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:51:15] "POST /account/getVerfiCode HTTP/1.0 200 0" 0.000458 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:51:30.075 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:51:30] "GET /static/css/fonts/ionicons.ttf?v=2.0.0 HTTP/1.0 200 0" 0.000458 http://www.mymallweb.com/static/css/iview.css Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:51:55.381 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:51:55] "GET /account/registerTpl HTTP/1.0 200 0" 0.002130  Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:51:55.408 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:51:55] "GET /static/css/iview.css HTTP/1.0 200 0" 0.000384 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:51:55.410 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:51:55] "GET /static/css/style.css HTTP/1.0 200 0" 0.000190 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:51:55.412 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:51:55] "GET /static/js/jQuery.js HTTP/1.0 200 0" 0.000227 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:51:55.413 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:51:55] "GET /static/css/reset.css HTTP/1.0 200 0" 0.000141 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:51:55.413 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:51:55] "GET /static/js/vue.min.js HTTP/1.0 200 0" 0.000127 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:51:55.413 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:51:55] "GET /static/js/iview.min.js HTTP/1.0 200 0" 0.000445 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:51:55.429 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:51:55] "GET /static/js/jquery-cookies.js HTTP/1.0 200 0" 0.000083 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:51:55.433 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:51:55] "GET /static/js/jquery.base64.min.js HTTP/1.0 200 0" 0.000081 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:51:55.433 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:51:55] "GET /static/js/sms.js HTTP/1.0 200 0" 0.000096 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:51:55.490 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:51:55] "GET /static/img/img-54.png HTTP/1.0 200 0" 0.000131 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:51:55.730 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:51:55] "GET /static/js/iview.min.js.map HTTP/1.0 404 0" 0.000786  Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:51:55.841 [I] [captcha.go:70] 3V897UBHrXCtrgjFF2Qj 
+2018/08/13 15:51:55.841 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:51:55] "POST /captcha/createCaptcha HTTP/1.0 200 0" 0.007690 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:52:03.567 [I] [captcha.go:79] {"val":"8","idkey":"3V897UBHrXCtrgjFF2Qj","_xsrf":"r23PNzbyNG24QujxWzzoSECK5Qm4yC3B"} 
+2018/08/13 15:52:03.567 [I] [captcha.go:89] false 
+2018/08/13 15:52:03.567 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:52:03] "POST /captcha/verfiyCaptcha HTTP/1.0 200 0" 0.000742 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:52:03.816 [I] [captcha.go:79] {"val":"86","idkey":"3V897UBHrXCtrgjFF2Qj","_xsrf":"r23PNzbyNG24QujxWzzoSECK5Qm4yC3B"} 
+2018/08/13 15:52:03.817 [I] [captcha.go:89] true 
+2018/08/13 15:52:03.818 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:52:03] "POST /captcha/verfiyCaptcha HTTP/1.0 200 0" 0.002091 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:52:17.151 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:52:17] "GET /static/css/fonts/ionicons.ttf?v=2.0.0 HTTP/1.0 200 0" 0.000340 http://www.mymallweb.com/static/css/iview.css Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:54:22.270 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:54:22] "GET /account/registerTpl HTTP/1.0 200 0" 0.003932  Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:54:22.307 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:54:22] "GET /static/css/iview.css HTTP/1.0 200 0" 0.000587 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:54:22.319 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:54:22] "GET /static/css/style.css HTTP/1.0 200 0" 0.000175 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:54:22.319 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:54:22] "GET /static/js/vue.min.js HTTP/1.0 200 0" 0.000121 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:54:22.320 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:54:22] "GET /static/js/jQuery.js HTTP/1.0 200 0" 0.000223 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:54:22.322 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:54:22] "GET /static/css/reset.css HTTP/1.0 200 0" 0.000084 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:54:22.322 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:54:22] "GET /static/js/iview.min.js HTTP/1.0 200 0" 0.002871 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:54:22.324 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:54:22] "GET /static/js/jquery-cookies.js HTTP/1.0 200 0" 0.000238 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:54:22.347 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:54:22] "GET /static/js/jquery.base64.min.js HTTP/1.0 200 0" 0.000233 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:54:22.356 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:54:22] "GET /static/js/sms.js HTTP/1.0 200 0" 0.000410 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:54:22.383 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:54:22] "GET /static/img/img-54.png HTTP/1.0 200 0" 0.000122 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:54:22.610 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:54:22] "GET /static/js/iview.min.js.map HTTP/1.0 404 0" 0.000589  Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:54:22.709 [I] [captcha.go:70] jsRBV96Gfoofmfy3Noh4 
+2018/08/13 15:54:22.709 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:54:22] "POST /captcha/createCaptcha HTTP/1.0 200 0" 0.005898 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:54:36.386 [I] [captcha.go:79] {"val":"1","idkey":"jsRBV96Gfoofmfy3Noh4","_xsrf":"r23PNzbyNG24QujxWzzoSECK5Qm4yC3B"} 
+2018/08/13 15:54:36.386 [I] [captcha.go:89] false 
+2018/08/13 15:54:36.387 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:54:36] "POST /captcha/verfiyCaptcha HTTP/1.0 200 0" 0.000723 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:54:36.786 [I] [captcha.go:79] {"val":"14","idkey":"jsRBV96Gfoofmfy3Noh4","_xsrf":"r23PNzbyNG24QujxWzzoSECK5Qm4yC3B"} 
+2018/08/13 15:54:36.786 [I] [captcha.go:89] false 
+2018/08/13 15:54:36.786 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:54:36] "POST /captcha/verfiyCaptcha HTTP/1.0 200 0" 0.000562 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:54:36.978 [I] [captcha.go:79] {"val":"143","idkey":"jsRBV96Gfoofmfy3Noh4","_xsrf":"r23PNzbyNG24QujxWzzoSECK5Qm4yC3B"} 
+2018/08/13 15:54:36.978 [I] [captcha.go:89] true 
+2018/08/13 15:54:36.978 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:54:36] "POST /captcha/verfiyCaptcha HTTP/1.0 200 0" 0.000657 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:54:37.896 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:54:37] "POST /account/getVerfiCode HTTP/1.0 200 0" 0.000786 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:54:53.168 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:54:53] "GET /static/css/fonts/ionicons.ttf?v=2.0.0 HTTP/1.0 200 0" 0.000206 http://www.mymallweb.com/static/css/iview.css Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:54:56.449 [I] [account.go:116] {"mobile":"15372090344","password":"zzw123123","repassword":"zzw123123","captchaVal":"143","is_captcha":"true","captchaKey":"jsRBV96Gfoofmfy3Noh4","verfiCode":"123123","_xsrf":"r23PNzbyNG24QujxWzzoSECK5Qm4yC3B"} 
+2018/08/13 15:54:56.449 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:54:56] "POST /account/doRegister HTTP/1.0 200 0" 0.000670 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:55:25.301 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 15:55:25.301 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 15:56:00.211 [I] [account.go:116] {"mobile":"15372090344","password":"zzw123123","repassword":"zzw123123","captchaVal":"143","is_captcha":"true","captchaKey":"jsRBV96Gfoofmfy3Noh4","verfiCode":"123123","_xsrf":"r23PNzbyNG24QujxWzzoSECK5Qm4yC3B"} 
+2018/08/13 15:56:00.211 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 03:56:00] "POST /account/doRegister HTTP/1.0 200 0" 0.001030 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 15:58:35.275 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 15:58:35.275 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 16:02:55.682 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 16:02:55.682 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 16:03:43.880 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 16:03:43.881 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 16:04:37.942 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 16:04:37.942 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 16:04:43.170 [I] [account.go:120] {"mobile":"15372090344","password":"zzw123123","repassword":"zzw123123","captchaVal":"143","is_captcha":"true","captchaKey":"jsRBV96Gfoofmfy3Noh4","verfiCode":"123123","_xsrf":"r23PNzbyNG24QujxWzzoSECK5Qm4yC3B"} 
+2018/08/13 16:04:43.170 [I] [account.go:126] map[repassword:zzw123123 captchaVal:143 is_captcha:true captchaKey:jsRBV96Gfoofmfy3Noh4 verfiCode:123123 _xsrf:r23PNzbyNG24QujxWzzoSECK5Qm4yC3B mobile:15372090344 password:zzw123123] 
+2018/08/13 16:04:43.170 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 04:04:43] "POST /account/doRegister HTTP/1.0 200 0" 0.000846 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 16:06:11.840 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 16:06:11.840 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 16:06:22.459 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 16:06:22.459 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 16:06:26.638 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 16:06:26.639 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 16:07:08.589 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 16:07:08.589 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 16:07:16.891 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 16:07:16.891 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 16:08:19.980 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 16:08:19.980 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 16:08:25.005 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 16:08:25.005 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 16:09:21.487 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 16:09:21.487 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 16:09:29.608 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 16:09:29.608 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 16:10:12.827 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 16:10:12.827 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 16:10:14.231 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 16:10:14.232 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 16:11:04.870 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 16:11:04.870 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 16:11:25.271 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 16:11:25.271 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 16:18:36.865 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 16:18:36.865 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 16:18:39.667 [I] [account.go:120] {"mobile":"15372090344","password":"zzw123123","repassword":"zzw123123","captchaVal":"143","is_captcha":"true","captchaKey":"jsRBV96Gfoofmfy3Noh4","verfiCode":"123123","_xsrf":"r23PNzbyNG24QujxWzzoSECK5Qm4yC3B"} 
+2018/08/13 16:18:39.676 [I] [account.go:128] <nil> 
+2018/08/13 16:18:39.677 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 04:18:39] "POST /account/doRegister HTTP/1.0 200 0" 0.010641 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 16:34:32.878 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 16:34:32.878 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:00:15.661 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:00:15.661 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:00:24.627 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 05:00:24] "GET /account/registerTpl HTTP/1.0 200 0" 0.003747 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 17:00:24.711 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 05:00:24] "GET /static/css/iview.css HTTP/1.0 200 0" 0.002518 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 17:00:24.711 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 05:00:24] "GET /static/css/reset.css HTTP/1.0 200 0" 0.002302 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 17:00:24.720 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 05:00:24] "GET /static/css/style.css HTTP/1.0 200 0" 0.010111 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 17:00:24.751 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 05:00:24] "GET /static/js/jquery.base64.min.js HTTP/1.0 200 0" 0.000368 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 17:00:24.753 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 05:00:24] "GET /static/js/vue.min.js HTTP/1.0 200 0" 0.002394 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 17:00:24.763 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 05:00:24] "GET /static/js/iview.min.js HTTP/1.0 200 0" 0.012082 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 17:00:24.769 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 05:00:24] "GET /static/js/sms.js HTTP/1.0 200 0" 0.014704 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 17:00:24.770 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 05:00:24] "GET /static/img/img-54.png HTTP/1.0 200 0" 0.002274 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 17:00:24.772 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 05:00:24] "GET /static/js/jQuery.js HTTP/1.0 200 0" 0.020878 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 17:00:24.773 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 05:00:24] "GET /static/js/jquery-cookies.js HTTP/1.0 200 0" 0.021556 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 17:00:25.058 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 05:00:25] "GET /static/js/iview.min.js.map HTTP/1.0 404 0" 0.000923  Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 17:00:25.182 [I] [captcha.go:70] rcUhZhS9K8z9GEnbztHt 
+2018/08/13 17:00:25.184 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 05:00:25] "POST /captcha/createCaptcha HTTP/1.0 200 0" 0.005820 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 17:00:35.288 [I] [captcha.go:79] {"val":"3","idkey":"rcUhZhS9K8z9GEnbztHt","_xsrf":"yq8VoFo2wBvCBmMF5b6APF0apZq1vaxE"} 
+2018/08/13 17:00:35.288 [I] [captcha.go:89] false 
+2018/08/13 17:00:35.288 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 05:00:35] "POST /captcha/verfiyCaptcha HTTP/1.0 200 0" 0.001451 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 17:00:35.394 [I] [captcha.go:79] {"val":"32","idkey":"rcUhZhS9K8z9GEnbztHt","_xsrf":"yq8VoFo2wBvCBmMF5b6APF0apZq1vaxE"} 
+2018/08/13 17:00:35.394 [I] [captcha.go:89] true 
+2018/08/13 17:00:35.394 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 05:00:35] "POST /captcha/verfiyCaptcha HTTP/1.0 200 0" 0.000629 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 17:00:36.518 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 05:00:36] "POST /account/getVerfiCode HTTP/1.0 200 0" 0.000452 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 17:00:46.450 [I] [account.go:120] {"mobile":"15372090344","password":"zzw122866","repassword":"zzw122866","captchaVal":"32","is_captcha":"true","captchaKey":"rcUhZhS9K8z9GEnbztHt","verfiCode":"123123","_xsrf":"yq8VoFo2wBvCBmMF5b6APF0apZq1vaxE"} 
+2018/08/13 17:00:46.450 [C] [asm_amd64.s:573] the request url is  /account/doRegister
+2018/08/13 17:00:46.450 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2018/08/13 17:00:46.450 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/asm_amd64.s:573
+2018/08/13 17:00:46.450 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/panic.go:502
+2018/08/13 17:00:46.450 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/panic.go:63
+2018/08/13 17:00:46.450 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/signal_unix.go:388
+2018/08/13 17:00:46.450 [C] [asm_amd64.s:573] /Users/zhiweizhang/webserver/golange/src/mymallweb/models/user.go:195
+2018/08/13 17:00:46.450 [C] [asm_amd64.s:573] /Users/zhiweizhang/webserver/golange/src/mymallweb/controllers/account.go:127
+2018/08/13 17:00:46.450 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/asm_amd64.s:573
+2018/08/13 17:00:46.450 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/reflect/value.go:447
+2018/08/13 17:00:46.450 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/reflect/value.go:308
+2018/08/13 17:00:46.451 [C] [asm_amd64.s:573] /Users/zhiweizhang/webserver/golange/src/github.com/astaxie/beego/router.go:847
+2018/08/13 17:00:46.451 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/net/http/server.go:2694
+2018/08/13 17:00:46.451 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/net/http/server.go:1830
+2018/08/13 17:00:46.451 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/asm_amd64.s:2361
+2018/08/13 17:00:46.469 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 05:00:46] "GET /static/css/fonts/ionicons.ttf?v=2.0.0 HTTP/1.0 200 0" 0.003128 http://www.mymallweb.com/static/css/iview.css Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 17:02:01.333 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:02:01.333 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:02:03.081 [I] [account.go:120] {"mobile":"15372090344","password":"zzw122866","repassword":"zzw122866","captchaVal":"32","is_captcha":"true","captchaKey":"rcUhZhS9K8z9GEnbztHt","verfiCode":"123123","_xsrf":"yq8VoFo2wBvCBmMF5b6APF0apZq1vaxE"} 
+2018/08/13 17:02:03.082 [C] [asm_amd64.s:573] the request url is  /account/doRegister
+2018/08/13 17:02:03.082 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2018/08/13 17:02:03.082 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/asm_amd64.s:573
+2018/08/13 17:02:03.082 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/panic.go:502
+2018/08/13 17:02:03.082 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/panic.go:63
+2018/08/13 17:02:03.082 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/signal_unix.go:388
+2018/08/13 17:02:03.082 [C] [asm_amd64.s:573] /Users/zhiweizhang/webserver/golange/src/mymallweb/models/user.go:195
+2018/08/13 17:02:03.082 [C] [asm_amd64.s:573] /Users/zhiweizhang/webserver/golange/src/mymallweb/controllers/account.go:127
+2018/08/13 17:02:03.082 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/asm_amd64.s:573
+2018/08/13 17:02:03.082 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/reflect/value.go:447
+2018/08/13 17:02:03.083 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/reflect/value.go:308
+2018/08/13 17:02:03.083 [C] [asm_amd64.s:573] /Users/zhiweizhang/webserver/golange/src/github.com/astaxie/beego/router.go:847
+2018/08/13 17:02:03.083 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/net/http/server.go:2694
+2018/08/13 17:02:03.083 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/net/http/server.go:1830
+2018/08/13 17:02:03.083 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/asm_amd64.s:2361
+2018/08/13 17:02:29.028 [I] [account.go:120] {"mobile":"15372090344","password":"zzw122866","repassword":"zzw122866","captchaVal":"32","is_captcha":"true","captchaKey":"rcUhZhS9K8z9GEnbztHt","verfiCode":"123123","_xsrf":"yq8VoFo2wBvCBmMF5b6APF0apZq1vaxE"} 
+2018/08/13 17:02:29.028 [C] [asm_amd64.s:573] the request url is  /account/doRegister
+2018/08/13 17:02:29.029 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2018/08/13 17:02:29.029 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/asm_amd64.s:573
+2018/08/13 17:02:29.029 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/panic.go:502
+2018/08/13 17:02:29.029 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/panic.go:63
+2018/08/13 17:02:29.029 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/signal_unix.go:388
+2018/08/13 17:02:29.029 [C] [asm_amd64.s:573] /Users/zhiweizhang/webserver/golange/src/mymallweb/models/user.go:195
+2018/08/13 17:02:29.029 [C] [asm_amd64.s:573] /Users/zhiweizhang/webserver/golange/src/mymallweb/controllers/account.go:127
+2018/08/13 17:02:29.029 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/asm_amd64.s:573
+2018/08/13 17:02:29.029 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/reflect/value.go:447
+2018/08/13 17:02:29.029 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/reflect/value.go:308
+2018/08/13 17:02:29.029 [C] [asm_amd64.s:573] /Users/zhiweizhang/webserver/golange/src/github.com/astaxie/beego/router.go:847
+2018/08/13 17:02:29.029 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/net/http/server.go:2694
+2018/08/13 17:02:29.029 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/net/http/server.go:1830
+2018/08/13 17:02:29.029 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/asm_amd64.s:2361
+2018/08/13 17:02:30.817 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:02:30.817 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:02:33.318 [I] [account.go:120] {"mobile":"15372090344","password":"zzw122866","repassword":"zzw122866","captchaVal":"32","is_captcha":"true","captchaKey":"rcUhZhS9K8z9GEnbztHt","verfiCode":"123123","_xsrf":"yq8VoFo2wBvCBmMF5b6APF0apZq1vaxE"} 
+2018/08/13 17:02:33.318 [C] [asm_amd64.s:573] the request url is  /account/doRegister
+2018/08/13 17:02:33.318 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2018/08/13 17:02:33.318 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/asm_amd64.s:573
+2018/08/13 17:02:33.318 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/panic.go:502
+2018/08/13 17:02:33.318 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/panic.go:63
+2018/08/13 17:02:33.319 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/signal_unix.go:388
+2018/08/13 17:02:33.319 [C] [asm_amd64.s:573] /Users/zhiweizhang/webserver/golange/src/mymallweb/models/user.go:195
+2018/08/13 17:02:33.319 [C] [asm_amd64.s:573] /Users/zhiweizhang/webserver/golange/src/mymallweb/controllers/account.go:127
+2018/08/13 17:02:33.319 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/asm_amd64.s:573
+2018/08/13 17:02:33.319 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/reflect/value.go:447
+2018/08/13 17:02:33.319 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/reflect/value.go:308
+2018/08/13 17:02:33.319 [C] [asm_amd64.s:573] /Users/zhiweizhang/webserver/golange/src/github.com/astaxie/beego/router.go:847
+2018/08/13 17:02:33.319 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/net/http/server.go:2694
+2018/08/13 17:02:33.319 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/net/http/server.go:1830
+2018/08/13 17:02:33.319 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/asm_amd64.s:2361
+2018/08/13 17:02:57.867 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:02:57.867 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:02:59.737 [I] [account.go:120] {"mobile":"15372090344","password":"zzw122866","repassword":"zzw122866","captchaVal":"32","is_captcha":"true","captchaKey":"rcUhZhS9K8z9GEnbztHt","verfiCode":"123123","_xsrf":"yq8VoFo2wBvCBmMF5b6APF0apZq1vaxE"} 
+2018/08/13 17:02:59.738 [C] [asm_amd64.s:573] the request url is  /account/doRegister
+2018/08/13 17:02:59.738 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2018/08/13 17:02:59.738 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/asm_amd64.s:573
+2018/08/13 17:02:59.738 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/panic.go:502
+2018/08/13 17:02:59.738 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/panic.go:63
+2018/08/13 17:02:59.738 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/signal_unix.go:388
+2018/08/13 17:02:59.739 [C] [asm_amd64.s:573] /Users/zhiweizhang/webserver/golange/src/mymallweb/models/user.go:194
+2018/08/13 17:02:59.739 [C] [asm_amd64.s:573] /Users/zhiweizhang/webserver/golange/src/mymallweb/controllers/account.go:127
+2018/08/13 17:02:59.739 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/asm_amd64.s:573
+2018/08/13 17:02:59.739 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/reflect/value.go:447
+2018/08/13 17:02:59.739 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/reflect/value.go:308
+2018/08/13 17:02:59.739 [C] [asm_amd64.s:573] /Users/zhiweizhang/webserver/golange/src/github.com/astaxie/beego/router.go:847
+2018/08/13 17:02:59.739 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/net/http/server.go:2694
+2018/08/13 17:02:59.739 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/net/http/server.go:1830
+2018/08/13 17:02:59.739 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/asm_amd64.s:2361
+2018/08/13 17:03:44.218 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:03:44.218 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:03:46.065 [I] [account.go:120] {"mobile":"15372090344","password":"zzw122866","repassword":"zzw122866","captchaVal":"32","is_captcha":"true","captchaKey":"rcUhZhS9K8z9GEnbztHt","verfiCode":"123123","_xsrf":"yq8VoFo2wBvCBmMF5b6APF0apZq1vaxE"} 
+2018/08/13 17:03:46.065 [C] [asm_amd64.s:573] the request url is  /account/doRegister
+2018/08/13 17:03:46.065 [C] [asm_amd64.s:573] Handler crashed with error wrong object type `**models.User` for rows scan, need *mymallweb/models.User
+2018/08/13 17:03:46.065 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/asm_amd64.s:573
+2018/08/13 17:03:46.065 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/panic.go:502
+2018/08/13 17:03:46.065 [C] [asm_amd64.s:573] /Users/zhiweizhang/webserver/golange/src/github.com/astaxie/beego/orm/db.go:903
+2018/08/13 17:03:46.066 [C] [asm_amd64.s:573] /Users/zhiweizhang/webserver/golange/src/github.com/astaxie/beego/orm/orm_queryset.go:201
+2018/08/13 17:03:46.066 [C] [asm_amd64.s:573] /Users/zhiweizhang/webserver/golange/src/mymallweb/models/user.go:195
+2018/08/13 17:03:46.066 [C] [asm_amd64.s:573] /Users/zhiweizhang/webserver/golange/src/mymallweb/controllers/account.go:127
+2018/08/13 17:03:46.066 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/asm_amd64.s:573
+2018/08/13 17:03:46.066 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/reflect/value.go:447
+2018/08/13 17:03:46.066 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/reflect/value.go:308
+2018/08/13 17:03:46.066 [C] [asm_amd64.s:573] /Users/zhiweizhang/webserver/golange/src/github.com/astaxie/beego/router.go:847
+2018/08/13 17:03:46.066 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/net/http/server.go:2694
+2018/08/13 17:03:46.066 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/net/http/server.go:1830
+2018/08/13 17:03:46.066 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/asm_amd64.s:2361
+2018/08/13 17:04:14.302 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:04:14.302 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:04:15.586 [I] [account.go:120] {"mobile":"15372090344","password":"zzw122866","repassword":"zzw122866","captchaVal":"32","is_captcha":"true","captchaKey":"rcUhZhS9K8z9GEnbztHt","verfiCode":"123123","_xsrf":"yq8VoFo2wBvCBmMF5b6APF0apZq1vaxE"} 
+2018/08/13 17:04:15.590 [I] [account.go:128] <nil> 
+2018/08/13 17:04:15.590 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 05:04:15] "POST /account/doRegister HTTP/1.0 200 0" 0.007015 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 17:04:56.354 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:04:56.355 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:05:01.320 [I] [account.go:120] {"mobile":"15372090344","password":"zzw122866","repassword":"zzw122866","captchaVal":"32","is_captcha":"true","captchaKey":"rcUhZhS9K8z9GEnbztHt","verfiCode":"123123","_xsrf":"yq8VoFo2wBvCBmMF5b6APF0apZq1vaxE"} 
+2018/08/13 17:05:01.364 [I] [account.go:128] <nil> 
+2018/08/13 17:05:01.364 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 05:05:01] "POST /account/doRegister HTTP/1.0 200 0" 0.050023 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 17:05:01.726 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:05:01.726 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:05:10.226 [I] [account.go:120] {"mobile":"15372090344","password":"zzw122866","repassword":"zzw122866","captchaVal":"32","is_captcha":"true","captchaKey":"rcUhZhS9K8z9GEnbztHt","verfiCode":"123123","_xsrf":"yq8VoFo2wBvCBmMF5b6APF0apZq1vaxE"} 
+2018/08/13 17:05:10.229 [I] [account.go:128] <nil> 
+2018/08/13 17:05:10.229 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 05:05:10] "POST /account/doRegister HTTP/1.0 200 0" 0.005125 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 17:05:29.045 [I] [account.go:120] {"mobile":"15372090342","password":"zzw122866","repassword":"zzw122866","captchaVal":"32","is_captcha":"true","captchaKey":"rcUhZhS9K8z9GEnbztHt","verfiCode":"123123","_xsrf":"yq8VoFo2wBvCBmMF5b6APF0apZq1vaxE"} 
+2018/08/13 17:05:29.050 [I] [account.go:128] <nil> 
+2018/08/13 17:05:29.050 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 05:05:29] "POST /account/doRegister HTTP/1.0 200 0" 0.007635 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 17:07:12.807 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:07:12.807 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:07:14.810 [I] [account.go:120] {"mobile":"15372090342","password":"zzw122866","repassword":"zzw122866","captchaVal":"32","is_captcha":"true","captchaKey":"rcUhZhS9K8z9GEnbztHt","verfiCode":"123123","_xsrf":"yq8VoFo2wBvCBmMF5b6APF0apZq1vaxE"} 
+2018/08/13 17:07:14.817 [I] [account.go:128] <nil> 
+2018/08/13 17:07:14.817 [I] [account.go:129] <QuerySeter> no row found 
+2018/08/13 17:07:14.817 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 05:07:14] "POST /account/doRegister HTTP/1.0 200 0" 0.010324 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 17:07:23.148 [I] [account.go:120] {"mobile":"15372090344","password":"zzw122866","repassword":"zzw122866","captchaVal":"32","is_captcha":"true","captchaKey":"rcUhZhS9K8z9GEnbztHt","verfiCode":"123123","_xsrf":"yq8VoFo2wBvCBmMF5b6APF0apZq1vaxE"} 
+2018/08/13 17:07:23.151 [I] [account.go:128] <nil> 
+2018/08/13 17:07:23.151 [I] [account.go:129] <nil> 
+2018/08/13 17:07:23.151 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 05:07:23] "POST /account/doRegister HTTP/1.0 200 0" 0.005097 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 17:08:19.482 [I] [account.go:120] {"mobile":"15372090344","password":"zzw122866","repassword":"zzw122866","captchaVal":"32","is_captcha":"true","captchaKey":"rcUhZhS9K8z9GEnbztHt","verfiCode":"123123","_xsrf":"yq8VoFo2wBvCBmMF5b6APF0apZq1vaxE"} 
+2018/08/13 17:08:19.485 [I] [account.go:128] <nil> 
+2018/08/13 17:08:19.485 [I] [account.go:129] <nil> 
+2018/08/13 17:08:19.485 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 05:08:19] "POST /account/doRegister HTTP/1.0 200 0" 0.004306 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 17:08:21.112 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:08:21.113 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:08:23.537 [I] [account.go:120] {"mobile":"15372090344","password":"zzw122866","repassword":"zzw122866","captchaVal":"32","is_captcha":"true","captchaKey":"rcUhZhS9K8z9GEnbztHt","verfiCode":"123123","_xsrf":"yq8VoFo2wBvCBmMF5b6APF0apZq1vaxE"} 
+2018/08/13 17:08:23.541 [I] [user.go:198] <nil> 
+2018/08/13 17:08:23.541 [I] [account.go:128] <nil> 
+2018/08/13 17:08:23.541 [I] [account.go:129] <nil> 
+2018/08/13 17:08:23.541 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 05:08:23] "POST /account/doRegister HTTP/1.0 200 0" 0.005793 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 17:08:43.651 [I] [account.go:120] {"mobile":"15372090342","password":"zzw122866","repassword":"zzw122866","captchaVal":"32","is_captcha":"true","captchaKey":"rcUhZhS9K8z9GEnbztHt","verfiCode":"123123","_xsrf":"yq8VoFo2wBvCBmMF5b6APF0apZq1vaxE"} 
+2018/08/13 17:08:43.654 [I] [user.go:198] <QuerySeter> no row found 
+2018/08/13 17:08:43.655 [I] [account.go:128] <nil> 
+2018/08/13 17:08:43.655 [I] [account.go:129] <QuerySeter> no row found 
+2018/08/13 17:08:43.655 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 05:08:43] "POST /account/doRegister HTTP/1.0 200 0" 0.004150 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 17:09:10.562 [I] [account.go:120] {"mobile":"15372090342","password":"zzw122866","repassword":"zzw122866","captchaVal":"32","is_captcha":"true","captchaKey":"rcUhZhS9K8z9GEnbztHt","verfiCode":"123123","_xsrf":"yq8VoFo2wBvCBmMF5b6APF0apZq1vaxE"} 
+2018/08/13 17:09:10.566 [I] [user.go:198] <QuerySeter> no row found 
+2018/08/13 17:09:10.566 [I] [account.go:128] <nil> 
+2018/08/13 17:09:10.566 [I] [account.go:129] <QuerySeter> no row found 
+2018/08/13 17:09:10.566 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 05:09:10] "POST /account/doRegister HTTP/1.0 200 0" 0.006494 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 17:09:11.193 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:09:11.193 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:09:19.691 [I] [account.go:120] {"mobile":"15372090344","password":"zzw122866","repassword":"zzw122866","captchaVal":"32","is_captcha":"true","captchaKey":"rcUhZhS9K8z9GEnbztHt","verfiCode":"123123","_xsrf":"yq8VoFo2wBvCBmMF5b6APF0apZq1vaxE"} 
+2018/08/13 17:09:19.692 [C] [asm_amd64.s:573] the request url is  /account/doRegister
+2018/08/13 17:09:19.692 [C] [asm_amd64.s:573] Handler crashed with error wrong object type `**models.User` for rows scan, need *mymallweb/models.User
+2018/08/13 17:09:19.692 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/asm_amd64.s:573
+2018/08/13 17:09:19.692 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/panic.go:502
+2018/08/13 17:09:19.692 [C] [asm_amd64.s:573] /Users/zhiweizhang/webserver/golange/src/github.com/astaxie/beego/orm/db.go:903
+2018/08/13 17:09:19.692 [C] [asm_amd64.s:573] /Users/zhiweizhang/webserver/golange/src/github.com/astaxie/beego/orm/orm_queryset.go:201
+2018/08/13 17:09:19.692 [C] [asm_amd64.s:573] /Users/zhiweizhang/webserver/golange/src/mymallweb/models/user.go:196
+2018/08/13 17:09:19.692 [C] [asm_amd64.s:573] /Users/zhiweizhang/webserver/golange/src/mymallweb/controllers/account.go:127
+2018/08/13 17:09:19.692 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/asm_amd64.s:573
+2018/08/13 17:09:19.692 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/reflect/value.go:447
+2018/08/13 17:09:19.692 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/reflect/value.go:308
+2018/08/13 17:09:19.692 [C] [asm_amd64.s:573] /Users/zhiweizhang/webserver/golange/src/github.com/astaxie/beego/router.go:847
+2018/08/13 17:09:19.692 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/net/http/server.go:2694
+2018/08/13 17:09:19.692 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/net/http/server.go:1830
+2018/08/13 17:09:19.692 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/asm_amd64.s:2361
+2018/08/13 17:09:28.984 [I] [account.go:120] {"mobile":"15372090344","password":"zzw122866","repassword":"zzw122866","captchaVal":"32","is_captcha":"true","captchaKey":"rcUhZhS9K8z9GEnbztHt","verfiCode":"123123","_xsrf":"yq8VoFo2wBvCBmMF5b6APF0apZq1vaxE"} 
+2018/08/13 17:09:28.985 [C] [asm_amd64.s:573] the request url is  /account/doRegister
+2018/08/13 17:09:28.985 [C] [asm_amd64.s:573] Handler crashed with error wrong object type `**models.User` for rows scan, need *mymallweb/models.User
+2018/08/13 17:09:28.985 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/asm_amd64.s:573
+2018/08/13 17:09:28.985 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/panic.go:502
+2018/08/13 17:09:28.985 [C] [asm_amd64.s:573] /Users/zhiweizhang/webserver/golange/src/github.com/astaxie/beego/orm/db.go:903
+2018/08/13 17:09:28.985 [C] [asm_amd64.s:573] /Users/zhiweizhang/webserver/golange/src/github.com/astaxie/beego/orm/orm_queryset.go:201
+2018/08/13 17:09:28.985 [C] [asm_amd64.s:573] /Users/zhiweizhang/webserver/golange/src/mymallweb/models/user.go:196
+2018/08/13 17:09:28.985 [C] [asm_amd64.s:573] /Users/zhiweizhang/webserver/golange/src/mymallweb/controllers/account.go:127
+2018/08/13 17:09:28.985 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/asm_amd64.s:573
+2018/08/13 17:09:28.985 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/reflect/value.go:447
+2018/08/13 17:09:28.986 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/reflect/value.go:308
+2018/08/13 17:09:28.986 [C] [asm_amd64.s:573] /Users/zhiweizhang/webserver/golange/src/github.com/astaxie/beego/router.go:847
+2018/08/13 17:09:28.986 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/net/http/server.go:2694
+2018/08/13 17:09:28.986 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/net/http/server.go:1830
+2018/08/13 17:09:28.986 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/asm_amd64.s:2361
+2018/08/13 17:09:30.822 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:09:30.823 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:09:33.417 [I] [account.go:120] {"mobile":"15372090344","password":"zzw122866","repassword":"zzw122866","captchaVal":"32","is_captcha":"true","captchaKey":"rcUhZhS9K8z9GEnbztHt","verfiCode":"123123","_xsrf":"yq8VoFo2wBvCBmMF5b6APF0apZq1vaxE"} 
+2018/08/13 17:09:33.417 [C] [asm_amd64.s:573] the request url is  /account/doRegister
+2018/08/13 17:09:33.417 [C] [asm_amd64.s:573] Handler crashed with error reflect: call of reflect.Value.Type on zero Value
+2018/08/13 17:09:33.417 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/asm_amd64.s:573
+2018/08/13 17:09:33.417 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/panic.go:502
+2018/08/13 17:09:33.417 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/reflect/value.go:1713
+2018/08/13 17:09:33.418 [C] [asm_amd64.s:573] /Users/zhiweizhang/webserver/golange/src/github.com/astaxie/beego/orm/db.go:896
+2018/08/13 17:09:33.418 [C] [asm_amd64.s:573] /Users/zhiweizhang/webserver/golange/src/github.com/astaxie/beego/orm/orm_queryset.go:201
+2018/08/13 17:09:33.418 [C] [asm_amd64.s:573] /Users/zhiweizhang/webserver/golange/src/mymallweb/models/user.go:196
+2018/08/13 17:09:33.418 [C] [asm_amd64.s:573] /Users/zhiweizhang/webserver/golange/src/mymallweb/controllers/account.go:127
+2018/08/13 17:09:33.418 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/asm_amd64.s:573
+2018/08/13 17:09:33.418 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/reflect/value.go:447
+2018/08/13 17:09:33.418 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/reflect/value.go:308
+2018/08/13 17:09:33.418 [C] [asm_amd64.s:573] /Users/zhiweizhang/webserver/golange/src/github.com/astaxie/beego/router.go:847
+2018/08/13 17:09:33.418 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/net/http/server.go:2694
+2018/08/13 17:09:33.418 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/net/http/server.go:1830
+2018/08/13 17:09:33.418 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/asm_amd64.s:2361
+2018/08/13 17:09:51.874 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:09:51.874 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:10:21.129 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:10:21.129 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:10:26.505 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:10:26.506 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:10:28.369 [I] [account.go:120] {"mobile":"15372090344","password":"zzw122866","repassword":"zzw122866","captchaVal":"32","is_captcha":"true","captchaKey":"rcUhZhS9K8z9GEnbztHt","verfiCode":"123123","_xsrf":"yq8VoFo2wBvCBmMF5b6APF0apZq1vaxE"} 
+2018/08/13 17:10:28.370 [C] [asm_amd64.s:573] the request url is  /account/doRegister
+2018/08/13 17:10:28.370 [C] [asm_amd64.s:573] Handler crashed with error wrong object type `**models.User` for rows scan, need *mymallweb/models.User
+2018/08/13 17:10:28.370 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/asm_amd64.s:573
+2018/08/13 17:10:28.370 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/panic.go:502
+2018/08/13 17:10:28.370 [C] [asm_amd64.s:573] /Users/zhiweizhang/webserver/golange/src/github.com/astaxie/beego/orm/db.go:903
+2018/08/13 17:10:28.370 [C] [asm_amd64.s:573] /Users/zhiweizhang/webserver/golange/src/github.com/astaxie/beego/orm/orm_queryset.go:201
+2018/08/13 17:10:28.370 [C] [asm_amd64.s:573] /Users/zhiweizhang/webserver/golange/src/mymallweb/models/user.go:197
+2018/08/13 17:10:28.370 [C] [asm_amd64.s:573] /Users/zhiweizhang/webserver/golange/src/mymallweb/controllers/account.go:127
+2018/08/13 17:10:28.370 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/asm_amd64.s:573
+2018/08/13 17:10:28.371 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/reflect/value.go:447
+2018/08/13 17:10:28.371 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/reflect/value.go:308
+2018/08/13 17:10:28.371 [C] [asm_amd64.s:573] /Users/zhiweizhang/webserver/golange/src/github.com/astaxie/beego/router.go:847
+2018/08/13 17:10:28.371 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/net/http/server.go:2694
+2018/08/13 17:10:28.371 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/net/http/server.go:1830
+2018/08/13 17:10:28.371 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/asm_amd64.s:2361
+2018/08/13 17:10:42.600 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:10:42.600 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:10:56.435 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:10:56.435 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:11:09.916 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:11:09.916 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:11:11.732 [I] [account.go:120] {"mobile":"15372090344","password":"zzw122866","repassword":"zzw122866","captchaVal":"32","is_captcha":"true","captchaKey":"rcUhZhS9K8z9GEnbztHt","verfiCode":"123123","_xsrf":"yq8VoFo2wBvCBmMF5b6APF0apZq1vaxE"} 
+2018/08/13 17:11:11.736 [I] [user.go:198] <nil> 
+2018/08/13 17:11:11.737 [C] [asm_amd64.s:573] the request url is  /account/doRegister
+2018/08/13 17:11:11.737 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2018/08/13 17:11:11.737 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/asm_amd64.s:573
+2018/08/13 17:11:11.737 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/panic.go:502
+2018/08/13 17:11:11.737 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/panic.go:63
+2018/08/13 17:11:11.737 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/signal_unix.go:388
+2018/08/13 17:11:11.737 [C] [asm_amd64.s:573] /Users/zhiweizhang/webserver/golange/src/mymallweb/controllers/account.go:128
+2018/08/13 17:11:11.737 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/asm_amd64.s:573
+2018/08/13 17:11:11.737 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/reflect/value.go:447
+2018/08/13 17:11:11.737 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/reflect/value.go:308
+2018/08/13 17:11:11.737 [C] [asm_amd64.s:573] /Users/zhiweizhang/webserver/golange/src/github.com/astaxie/beego/router.go:847
+2018/08/13 17:11:11.737 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/net/http/server.go:2694
+2018/08/13 17:11:11.737 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/net/http/server.go:1830
+2018/08/13 17:11:11.737 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/asm_amd64.s:2361
+2018/08/13 17:12:27.222 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:12:27.222 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:12:29.213 [I] [account.go:120] {"mobile":"15372090344","password":"zzw122866","repassword":"zzw122866","captchaVal":"32","is_captcha":"true","captchaKey":"rcUhZhS9K8z9GEnbztHt","verfiCode":"123123","_xsrf":"yq8VoFo2wBvCBmMF5b6APF0apZq1vaxE"} 
+2018/08/13 17:12:29.215 [I] [user.go:198] <nil> 
+2018/08/13 17:12:29.215 [C] [asm_amd64.s:573] the request url is  /account/doRegister
+2018/08/13 17:12:29.215 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2018/08/13 17:12:29.215 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/asm_amd64.s:573
+2018/08/13 17:12:29.215 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/panic.go:502
+2018/08/13 17:12:29.215 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/panic.go:63
+2018/08/13 17:12:29.216 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/signal_unix.go:388
+2018/08/13 17:12:29.216 [C] [asm_amd64.s:573] /Users/zhiweizhang/webserver/golange/src/mymallweb/controllers/account.go:129
+2018/08/13 17:12:29.216 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/asm_amd64.s:573
+2018/08/13 17:12:29.216 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/reflect/value.go:447
+2018/08/13 17:12:29.216 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/reflect/value.go:308
+2018/08/13 17:12:29.216 [C] [asm_amd64.s:573] /Users/zhiweizhang/webserver/golange/src/github.com/astaxie/beego/router.go:847
+2018/08/13 17:12:29.216 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/net/http/server.go:2694
+2018/08/13 17:12:29.216 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/net/http/server.go:1830
+2018/08/13 17:12:29.216 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/asm_amd64.s:2361
+2018/08/13 17:12:54.000 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:12:54.000 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:13:04.150 [I] [account.go:120] {"mobile":"15372090344","password":"zzw122866","repassword":"zzw122866","captchaVal":"32","is_captcha":"true","captchaKey":"rcUhZhS9K8z9GEnbztHt","verfiCode":"123123","_xsrf":"yq8VoFo2wBvCBmMF5b6APF0apZq1vaxE"} 
+2018/08/13 17:13:04.153 [I] [user.go:198] <nil> 
+2018/08/13 17:13:04.154 [C] [asm_amd64.s:573] the request url is  /account/doRegister
+2018/08/13 17:13:04.154 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2018/08/13 17:13:04.154 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/asm_amd64.s:573
+2018/08/13 17:13:04.154 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/panic.go:502
+2018/08/13 17:13:04.154 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/panic.go:63
+2018/08/13 17:13:04.154 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/signal_unix.go:388
+2018/08/13 17:13:04.154 [C] [asm_amd64.s:573] /Users/zhiweizhang/webserver/golange/src/mymallweb/controllers/account.go:128
+2018/08/13 17:13:04.154 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/asm_amd64.s:573
+2018/08/13 17:13:04.154 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/reflect/value.go:447
+2018/08/13 17:13:04.158 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/reflect/value.go:308
+2018/08/13 17:13:04.158 [C] [asm_amd64.s:573] /Users/zhiweizhang/webserver/golange/src/github.com/astaxie/beego/router.go:847
+2018/08/13 17:13:04.158 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/net/http/server.go:2694
+2018/08/13 17:13:04.158 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/net/http/server.go:1830
+2018/08/13 17:13:04.158 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/asm_amd64.s:2361
+2018/08/13 17:13:06.015 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:13:06.015 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:13:10.194 [I] [account.go:120] {"mobile":"15372090344","password":"zzw122866","repassword":"zzw122866","captchaVal":"32","is_captcha":"true","captchaKey":"rcUhZhS9K8z9GEnbztHt","verfiCode":"123123","_xsrf":"yq8VoFo2wBvCBmMF5b6APF0apZq1vaxE"} 
+2018/08/13 17:13:10.200 [I] [user.go:198] <nil> 
+2018/08/13 17:13:10.200 [C] [asm_amd64.s:573] the request url is  /account/doRegister
+2018/08/13 17:13:10.200 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2018/08/13 17:13:10.200 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/asm_amd64.s:573
+2018/08/13 17:13:10.200 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/panic.go:502
+2018/08/13 17:13:10.201 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/panic.go:63
+2018/08/13 17:13:10.201 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/signal_unix.go:388
+2018/08/13 17:13:10.201 [C] [asm_amd64.s:573] /Users/zhiweizhang/webserver/golange/src/mymallweb/controllers/account.go:128
+2018/08/13 17:13:10.201 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/asm_amd64.s:573
+2018/08/13 17:13:10.202 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/reflect/value.go:447
+2018/08/13 17:13:10.202 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/reflect/value.go:308
+2018/08/13 17:13:10.203 [C] [asm_amd64.s:573] /Users/zhiweizhang/webserver/golange/src/github.com/astaxie/beego/router.go:847
+2018/08/13 17:13:10.203 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/net/http/server.go:2694
+2018/08/13 17:13:10.203 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/net/http/server.go:1830
+2018/08/13 17:13:10.203 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/asm_amd64.s:2361
+2018/08/13 17:13:22.615 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:13:22.615 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:13:25.235 [I] [account.go:120] {"mobile":"15372090344","password":"zzw122866","repassword":"zzw122866","captchaVal":"32","is_captcha":"true","captchaKey":"rcUhZhS9K8z9GEnbztHt","verfiCode":"123123","_xsrf":"yq8VoFo2wBvCBmMF5b6APF0apZq1vaxE"} 
+2018/08/13 17:13:25.238 [I] [user.go:198] <nil> 
+2018/08/13 17:13:25.238 [I] [account.go:128] <nil> 
+2018/08/13 17:13:25.238 [I] [account.go:129] <nil> 
+2018/08/13 17:13:25.238 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 05:13:25] "POST /account/doRegister HTTP/1.0 200 0" 0.005489 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 17:15:09.440 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:15:09.440 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:15:42.147 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:15:42.147 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:15:45.999 [I] [account.go:120] {"mobile":"15372090344","password":"zzw122866","repassword":"zzw122866","captchaVal":"32","is_captcha":"true","captchaKey":"rcUhZhS9K8z9GEnbztHt","verfiCode":"123123","_xsrf":"yq8VoFo2wBvCBmMF5b6APF0apZq1vaxE"} 
+2018/08/13 17:15:46.000 [C] [asm_amd64.s:573] the request url is  /account/doRegister
+2018/08/13 17:15:46.000 [C] [asm_amd64.s:573] Handler crashed with error wrong object type `*[]orm.Params` for rows scan, need *[]*mymallweb/models.User or *[]mymallweb/models.User
+2018/08/13 17:15:46.000 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/asm_amd64.s:573
+2018/08/13 17:15:46.000 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/panic.go:502
+2018/08/13 17:15:46.000 [C] [asm_amd64.s:573] /Users/zhiweizhang/webserver/golange/src/github.com/astaxie/beego/orm/db.go:905
+2018/08/13 17:15:46.000 [C] [asm_amd64.s:573] /Users/zhiweizhang/webserver/golange/src/github.com/astaxie/beego/orm/orm_queryset.go:201
+2018/08/13 17:15:46.000 [C] [asm_amd64.s:573] /Users/zhiweizhang/webserver/golange/src/mymallweb/models/user.go:198
+2018/08/13 17:15:46.000 [C] [asm_amd64.s:573] /Users/zhiweizhang/webserver/golange/src/mymallweb/controllers/account.go:127
+2018/08/13 17:15:46.000 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/asm_amd64.s:573
+2018/08/13 17:15:46.000 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/reflect/value.go:447
+2018/08/13 17:15:46.000 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/reflect/value.go:308
+2018/08/13 17:15:46.000 [C] [asm_amd64.s:573] /Users/zhiweizhang/webserver/golange/src/github.com/astaxie/beego/router.go:847
+2018/08/13 17:15:46.000 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/net/http/server.go:2694
+2018/08/13 17:15:46.000 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/net/http/server.go:1830
+2018/08/13 17:15:46.000 [C] [asm_amd64.s:573] /usr/local/Cellar/go/1.10.3/libexec/src/runtime/asm_amd64.s:2361
+2018/08/13 17:16:02.186 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:16:02.186 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:21:53.333 [I] [account.go:120] {"mobile":"15372090344","password":"zzw122866","repassword":"zzw122866","captchaVal":"32","is_captcha":"true","captchaKey":"rcUhZhS9K8z9GEnbztHt","verfiCode":"123123","_xsrf":"yq8VoFo2wBvCBmMF5b6APF0apZq1vaxE"} 
+2018/08/13 17:21:53.342 [I] [user.go:198] <nil> 
+2018/08/13 17:21:53.342 [I] [account.go:128] <nil> 
+2018/08/13 17:21:53.342 [I] [account.go:129] <nil> 
+2018/08/13 17:21:53.342 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 05:21:53] "POST /account/doRegister HTTP/1.0 200 0" 0.010397 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 17:22:31.238 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:22:31.238 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:22:34.097 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:22:34.097 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:22:34.716 [I] [account.go:120] {"mobile":"15372090344","password":"zzw122866","repassword":"zzw122866","captchaVal":"32","is_captcha":"true","captchaKey":"rcUhZhS9K8z9GEnbztHt","verfiCode":"123123","_xsrf":"yq8VoFo2wBvCBmMF5b6APF0apZq1vaxE"} 
+2018/08/13 17:22:34.719 [I] [user.go:198] <nil> 
+2018/08/13 17:22:34.719 [I] [user.go:209] 123123 
+2018/08/13 17:22:34.719 [I] [account.go:128] <nil> 
+2018/08/13 17:22:34.719 [I] [account.go:129] <nil> 
+2018/08/13 17:22:34.719 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 05:22:34] "POST /account/doRegister HTTP/1.0 200 0" 0.004112 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 17:22:45.200 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:22:45.200 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:22:45.562 [I] [account.go:120] {"mobile":"15372090344","password":"zzw122866","repassword":"zzw122866","captchaVal":"32","is_captcha":"true","captchaKey":"rcUhZhS9K8z9GEnbztHt","verfiCode":"123123","_xsrf":"yq8VoFo2wBvCBmMF5b6APF0apZq1vaxE"} 
+2018/08/13 17:22:45.566 [I] [user.go:198] <nil> 
+2018/08/13 17:22:45.566 [I] [user.go:209] <nil> 
+2018/08/13 17:22:45.566 [I] [account.go:128] <nil> 
+2018/08/13 17:22:45.567 [I] [account.go:129] <nil> 
+2018/08/13 17:22:45.567 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 05:22:45] "POST /account/doRegister HTTP/1.0 200 0" 0.005598 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 17:23:57.303 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:23:57.303 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:25:40.428 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:25:40.428 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:25:40.619 [I] [account.go:120] {"mobile":"15372090344","password":"zzw122866","repassword":"zzw122866","captchaVal":"32","is_captcha":"true","captchaKey":"rcUhZhS9K8z9GEnbztHt","verfiCode":"123123","_xsrf":"yq8VoFo2wBvCBmMF5b6APF0apZq1vaxE"} 
+2018/08/13 17:25:40.621 [I] [user.go:198] <nil> 
+2018/08/13 17:25:40.621 [I] [user.go:209] <nil> 
+2018/08/13 17:25:40.621 [I] [user.go:210] {586 0 0 0 0   0                 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 } 
+2018/08/13 17:25:40.621 [I] [account.go:128] <nil> 
+2018/08/13 17:25:40.621 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 05:25:40] "POST /account/doRegister HTTP/1.0 200 0" 0.005020 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 17:27:04.738 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:27:04.738 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:27:07.051 [I] [account.go:120] {"mobile":"15372090344","password":"zzw122866","repassword":"zzw122866","captchaVal":"32","is_captcha":"true","captchaKey":"rcUhZhS9K8z9GEnbztHt","verfiCode":"123123","_xsrf":"yq8VoFo2wBvCBmMF5b6APF0apZq1vaxE"} 
+2018/08/13 17:27:07.056 [I] [user.go:197] <nil> 
+2018/08/13 17:27:07.057 [I] [user.go:208] {586 0 0 0 0   0                 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 } 
+2018/08/13 17:27:07.116 [I] [account.go:128] {586 0 0 0 0   0                 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 } 
+2018/08/13 17:27:07.117 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 05:27:07] "POST /account/doRegister HTTP/1.0 200 0" 0.067365 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 17:27:21.430 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:27:21.430 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:27:23.719 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:27:23.719 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:27:27.875 [I] [account.go:120] {"mobile":"15372090342","password":"zzw122866","repassword":"zzw122866","captchaVal":"32","is_captcha":"true","captchaKey":"rcUhZhS9K8z9GEnbztHt","verfiCode":"123123","_xsrf":"yq8VoFo2wBvCBmMF5b6APF0apZq1vaxE"} 
+2018/08/13 17:27:27.879 [I] [user.go:197] <QuerySeter> no row found 
+2018/08/13 17:27:27.879 [I] [account.go:128] {0 0 0 0 0   0                 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 } 
+2018/08/13 17:27:27.880 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 05:27:27] "POST /account/doRegister HTTP/1.0 200 0" 0.006543 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 17:28:45.402 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:28:45.402 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:29:55.337 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:29:55.337 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:29:57.618 [I] [account.go:120] {"mobile":"15372090342","password":"zzw122866","repassword":"zzw122866","captchaVal":"32","is_captcha":"true","captchaKey":"rcUhZhS9K8z9GEnbztHt","verfiCode":"123123","_xsrf":"yq8VoFo2wBvCBmMF5b6APF0apZq1vaxE"} 
+2018/08/13 17:29:57.623 [I] [user.go:197] <QuerySeter> no row found 
+2018/08/13 17:29:57.623 [I] [account.go:128] 0 
+2018/08/13 17:29:57.624 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 05:29:57] "POST /account/doRegister HTTP/1.0 200 0" 0.007571 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 17:30:10.638 [I] [account.go:120] {"mobile":"15372090344","password":"zzw122866","repassword":"zzw122866","captchaVal":"32","is_captcha":"true","captchaKey":"rcUhZhS9K8z9GEnbztHt","verfiCode":"123123","_xsrf":"yq8VoFo2wBvCBmMF5b6APF0apZq1vaxE"} 
+2018/08/13 17:30:10.641 [I] [user.go:197] <nil> 
+2018/08/13 17:30:10.641 [I] [user.go:208] {586 0 0 0 0   0                 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 } 
+2018/08/13 17:30:10.641 [I] [account.go:128] 586 
+2018/08/13 17:30:10.641 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 05:30:10] "POST /account/doRegister HTTP/1.0 200 0" 0.004519 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 17:30:54.801 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:30:54.801 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:31:03.446 [I] [account.go:120] {"mobile":"15372090344","password":"zzw122866","repassword":"zzw122866","captchaVal":"32","is_captcha":"true","captchaKey":"rcUhZhS9K8z9GEnbztHt","verfiCode":"123123","_xsrf":"yq8VoFo2wBvCBmMF5b6APF0apZq1vaxE"} 
+2018/08/13 17:31:03.451 [I] [user.go:197] <nil> 
+2018/08/13 17:31:03.452 [I] [user.go:208] {586 0 0 0 0   0                 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 } 
+2018/08/13 17:31:03.452 [I] [account.go:128] 586 
+2018/08/13 17:31:03.452 [I] [account.go:130] 此手机号已存在 
+2018/08/13 17:31:03.452 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 05:31:03] "POST /account/doRegister HTTP/1.0 200 0" 0.007355 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 17:31:25.843 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:31:25.843 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:31:32.416 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:31:32.416 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:31:40.870 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:31:40.870 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:33:22.196 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:33:22.197 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:33:25.032 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:33:25.032 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:34:01.307 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:34:01.307 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:34:02.635 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:34:02.635 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:36:17.633 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:36:17.633 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:36:40.291 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:36:40.292 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:36:53.353 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:36:53.353 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:43:39.222 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:43:39.222 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:44:45.745 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:44:45.745 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:46:53.594 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:46:53.594 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:47:21.549 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:47:21.549 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:47:24.434 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:47:24.435 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:47:38.814 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:47:38.814 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:48:01.036 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:48:01.036 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:48:23.917 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:48:23.917 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:50:02.510 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:50:02.510 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:51:11.905 [I] [account.go:120] {"mobile":"15372090344","password":"zzw122866","repassword":"zzw122866","captchaVal":"32","is_captcha":"true","captchaKey":"rcUhZhS9K8z9GEnbztHt","verfiCode":"123123","_xsrf":"yq8VoFo2wBvCBmMF5b6APF0apZq1vaxE"} 
+2018/08/13 17:51:11.934 [I] [user.go:197] <nil> 
+2018/08/13 17:51:11.934 [I] [account.go:129] 586 
+2018/08/13 17:51:11.934 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 05:51:11] "POST /account/doRegister HTTP/1.0 200 0" 0.031798 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 17:51:12.492 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:51:12.492 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:51:20.375 [I] [account.go:120] {"mobile":"15372090344","password":"zzw122866","repassword":"zzw122866","captchaVal":"32","is_captcha":"true","captchaKey":"rcUhZhS9K8z9GEnbztHt","verfiCode":"123123","_xsrf":"yq8VoFo2wBvCBmMF5b6APF0apZq1vaxE"} 
+2018/08/13 17:51:20.378 [I] [user.go:197] <nil> 
+2018/08/13 17:51:20.378 [I] [account.go:129] 586 
+2018/08/13 17:51:20.379 [I] [account.go:130] 0 
+2018/08/13 17:51:20.379 [I] [account.go:131] 0 
+2018/08/13 17:51:20.379 [D] [server.go:2694] 127.0.0.1 - - [13/Aug/2018 05:51:20] "POST /account/doRegister HTTP/1.0 200 0" 0.005184 http://www.mymallweb.com/account/registerTpl Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+
+2018/08/13 17:51:49.777 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:51:49.777 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088
+2018/08/13 17:51:52.426 [I] [asm_amd64.s:2361] http server Running on http://:8098
+2018/08/13 17:51:52.426 [I] [asm_amd64.s:2361] Admin server Running on localhost:9088

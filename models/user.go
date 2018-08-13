@@ -8,6 +8,7 @@ import (
 	_ "time"
 
 	"github.com/astaxie/beego/orm"
+	"github.com/astaxie/beego"
 )
 
 type User struct {
@@ -190,6 +191,19 @@ func DeleteUser(id int) (err error) {
 	}
 	return
 }
-func GetUserInfoByNamePwd() {
-
+func GetUserByMobile(mobile string) (v User, err error) {
+	o := orm.NewOrm()
+	err = o.QueryTable(new(User)).Filter("mobile", mobile).One(&v,"Id")
+	beego.Info(err)
+	if err == orm.ErrMultiRows {
+		// 多条的时候报错
+		fmt.Printf("Returned Multi Rows Not One")
+		return v, err
+	}
+	if err == orm.ErrNoRows {
+		// 没有找到记录
+		fmt.Printf("Not row found")
+		return v, err
+	}
+	return v, nil
 }

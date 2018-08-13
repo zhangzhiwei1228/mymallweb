@@ -88,6 +88,7 @@
             is_captcha:false,
             is_send:false,
             is_send_success:false,
+            is_pwd_success:false,
         },
         methods: {
             init: function () {
@@ -103,10 +104,36 @@
                 });
             },
             doRegister:function () {
+                if(!(/^1[34578]\d{9}$/.test(this.mobile))) {
+                    this.showError("手机号码格式有误，请重填")
+                    return false
+                }
+                if(!this.is_captcha || !this.captcha) {
+                    this.showError("图形验证码输入不正确")
+                    return false
+                }
+                if(!this.is_send_success || !this.verfiCode) {
+                    this.showError("手机验证码输入有误")
+                    return false
+                }
+                if (!/^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,20}$/.test(rgTpl.password )) {
+                    this.showError("请输入6-20位包含数字和字母的密码")
+                    return false;
+                }
+                if(!this.is_pwd_success || rgTpl.password !== rgTpl.repassword) {
+                    this.showError("两次密码不一致")
+                    return false
+                }
+
                 var url='/account/doRegister';
                 var p = {};
-                p.username = this.username;
+                p.mobile = this.mobile;
                 p.password = this.password;
+                p.repassword = this.repassword;
+                p.captchaVal = this.captcha;
+                p.is_captcha = "" +this.is_captcha + "";
+                p.captchaKey = this.captchaInfo.captchaId
+                p.verfiCode = this.verfiCode
                 sms.fpost(url, p, function (data) {
                     window.location.href='/account/SuccessTpl'
                 }, function (code, msg) {
@@ -137,6 +164,7 @@
                 p.mobile = this.mobile;
                 p.captchaVal = this.captcha;
                 p.is_captcha = "" +this.is_captcha + "";
+                p.is_reg = "1";
                 p.captchaKey = this.captchaInfo.captchaId
                 sms.fpost(url, p, function (data) {
                     rgTpl.is_send=true
@@ -164,10 +192,12 @@
                 }
             },
             repassword:function (val) {
-                if(val !== this.password) {
+                if(val !== rgTpl.password) {
+                    rgTpl.is_pwd_success = false;
                     //this.showError("两次密码不一致，请重新输入")
                     return false;
                 }
+                rgTpl.is_pwd_success = true;
             },
             captcha:function (val) {
                 var url='/captcha/verfiyCaptcha';
@@ -193,6 +223,7 @@
         var secondsremained =     $.cookie("secondsremained");
         if(secondsremained){
             rgTpl.is_send=true
+            rgTpl.is_send_success=true
             var date = new Date(unescape(secondsremained));
             setCoutDown(date,$("#code_btn"));
         }

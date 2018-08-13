@@ -113,12 +113,43 @@ func (c *AccountController) RegisterTpl() {
 
 //注册提交的页面
 func (c *AccountController) DoRegister() {
+	SessonInfo := c.GetSession("USER_LOGIN_VALUE")
+	if SessonInfo != nil {
+		c.Redirect("/",302 )
+	}
 	beego.Info(string(c.Ctx.Input.RequestBody))
-	jsoninfo := c.GetString("username")
-	if jsoninfo == "" {
-		c.Ctx.WriteString("username is empty")
+	regInfo := map[string] string{"mobile":"","password":"","repassword":"","captchaVal":"","is_captcha":"","captchaKey":"","verfiCode":"","_xsrf":""}
+	err := json.Unmarshal(c.Ctx.Input.RequestBody,&regInfo)
+	if err != nil {
+		c.SetJson(1,"","数据格式有误")
 		return
 	}
+
+	userInfo, err  := models.GetUserByMobile(regInfo["mobile"])
+	if userInfo.Id != 0 && userInfo.IsDeleted == 0 && userInfo.IsEnabled == 0{
+		c.SetJson(1,"","此手机号已存在")
+		return
+	}
+
+	if !helper.ValidateMobile(regInfo["mobile"]) {
+		c.SetJson(1,"","手机号格式有误")
+		return
+	}
+	if regInfo["password"] != regInfo["repassword"] {
+		c.SetJson(1,"","两次密码不一致")
+		return
+	}
+	if !helper.ValidateCaptcha(regInfo["captchaKey"],regInfo["captchaVal"],false) {
+		c.SetJson(1,"","输入的图形验证码不一致")
+		return
+	}
+
+	beego.Info(regInfo)
+	res := map[string] string{}
+	res["username"] = regInfo["mobile"]
+	res["nickname"] = regInfo["mobile"]
+	c.SetJson(0,res,"注册成功")
+	return
 }
 //检查是否登录
 func (c *AccountController) CheckInfo()  {
@@ -154,7 +185,7 @@ func (c *AccountController) GetVerfiCode() {
 	c.SetJson(0, 1, "获取手机验证码成功")
 	return
 	beego.Info(string(c.Ctx.Input.RequestBody))
-	postData := map[string]string{"mobile": "", "captchaVal": "","captchaKey":"","is_captcha":""}
+	postData := map[string]string{"mobile": "", "captchaVal": "","captchaKey":"","is_captcha":"","is_reg": ""}
 	err := json.Unmarshal(c.Ctx.Input.RequestBody, &postData)
 	if err != nil {
 		c.SetJson(1, nil, "数据格式错误")
@@ -190,6 +221,14 @@ func (c *AccountController) GetVerfiCode() {
 	beego.Info("通过X-Forwarded-For获取的ip地址 ：" +ip)
 	beego.Info("通过c.Ctx.Input.IP获取的ip地址 ：" +inputIp)
 	//查询数据库 ip or mobile having count < 4 最新时间小于当前时间
+	if postData["is_reg"] == "1" { //如果是注册，要判断手机号是否注册过
+		userInfo, _  := models.GetUserByMobile(mobile)
+		beego.Info(userInfo.Id)
+		if userInfo.Id != 0 {
+			c.SetJson(1,"","此手机号已存在，不能获取验证码")
+			return
+		}
+	}
 	var ipInt = helper.IpToInt(ip)
 	timeUnix:=time.Now().Unix()
 	SelectData := []string{mobile, strconv.Itoa(ipInt), strconv.FormatInt(timeUnix,10)}
@@ -197,7 +236,7 @@ func (c *AccountController) GetVerfiCode() {
 	var captchaModel models.Captcha
 	o := orm.NewOrm()
 	beego.Info("开始查询")
-	err = o.Raw("SELECT id FROM `scn_captcha` WHERE (mobile = ? or ip = ?) and expiration_date >= ? limit 1", SelectData).QueryRow(&captchaModel)
+	err = o.Raw("SELECT count(1) FROM `scn_captcha` WHERE (mobile = ? or ip = ?) and expiration_date >= ? group by mobile having count(1) > 4", SelectData).QueryRow(&captchaModel)
 	beego.Info(err)
 	if err == nil {
 		c.SetJson(1, nil, "不要重复获取")
@@ -249,9 +288,3 @@ func (c *AccountController) GetVerfiCode() {
 
 }
 
-func (c *AccountController) TestFun()  {
-	ip := c.Ctx.Request.Header.Get("HTTP_X_REAL_IP")
-	beego.Info(ip)
-	beego.Info(c.Ctx.Input.IP())
-	return
-}
