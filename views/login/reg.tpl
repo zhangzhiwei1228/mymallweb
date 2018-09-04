@@ -124,6 +124,10 @@
                     this.showError("两次密码不一致")
                     return false
                 }
+                if(this.invitationCode && !(/^1[34578]\d{9}$/.test(this.invitationCode))) {
+                    this.showError("邀请人手机号码格式有误，请重填")
+                    return false
+                }
 
                 var url='/account/doRegister';
                 var p = {};
@@ -132,8 +136,9 @@
                 p.repassword = this.repassword;
                 p.captchaVal = this.captcha;
                 p.is_captcha = "" +this.is_captcha + "";
-                p.captchaKey = this.captchaInfo.captchaId
-                p.verfiCode = this.verfiCode
+                p.captchaKey = this.captchaInfo.captchaId;
+                p.verfiCode = this.verfiCode;
+                p.invitationCode = this.invitationCode;
                 sms.fpost(url, p, function (data) {
                     window.location.href='/account/SuccessTpl'
                 }, function (code, msg) {
@@ -182,6 +187,12 @@
             mobile:function (val) {
                 if(val.length === 11 && !(/^1[34578]\d{9}$/.test(val))){
                     this.showError("手机号码格式有误，请重填")
+                    return false
+                }
+            },
+            invitationCode:function (val) {
+                if(val.length === 11 && !(/^1[34578]\d{9}$/.test(val))){
+                    this.showError("邀请人手机号码格式有误，请重填")
                     return false
                 }
             },

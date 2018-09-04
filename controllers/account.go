@@ -118,14 +118,14 @@ func (c *AccountController) DoRegister() {
 		c.Redirect("/",302 )
 	}
 	beego.Info(string(c.Ctx.Input.RequestBody))
-	regInfo := map[string] string{"mobile":"","password":"","repassword":"","captchaVal":"","is_captcha":"","captchaKey":"","verfiCode":"","_xsrf":""}
+	regInfo := map[string] string{"mobile":"","password":"","repassword":"","captchaVal":"","is_captcha":"","captchaKey":"","verfiCode":"","invitationCode":"","_xsrf":""}
 	err := json.Unmarshal(c.Ctx.Input.RequestBody,&regInfo)
 	if err != nil {
 		c.SetJson(1,"","数据格式有误")
 		return
 	}
 
-	userInfo, err  := models.GetUserByMobile(regInfo["mobile"])
+	userInfo, _  := models.GetUserByMobile(regInfo["mobile"],"id,is_deleted,is_enabled")
 	if userInfo.Id != 0 && userInfo.IsDeleted == 0 && userInfo.IsEnabled == 0{
 		c.SetJson(1,"","此手机号已存在")
 		return
@@ -134,6 +134,21 @@ func (c *AccountController) DoRegister() {
 	if !helper.ValidateMobile(regInfo["mobile"]) {
 		c.SetJson(1,"","手机号格式有误")
 		return
+	}
+	inviterId := 0
+	if regInfo["invitationCode"] !="" {
+		if !helper.ValidateMobile(regInfo["invitationCode"]) {
+			c.SetJson(1,"","邀请人手机号格式有误")
+			return
+		} else {
+			inviterInfo, _  := models.GetUserByMobile(regInfo["mobile"],"id,is_deleted,is_enabled")
+			if inviterInfo.Id == 0 || inviterInfo.IsDeleted == 0 || inviterInfo.IsEnabled == 0{
+				c.SetJson(1,"","邀请人手机号不存在或已被删除")
+				return
+			}
+			inviterId = inviterInfo.Id
+		}
+
 	}
 	if regInfo["password"] != regInfo["repassword"] {
 		c.SetJson(1,"","两次密码不一致")
@@ -148,6 +163,7 @@ func (c *AccountController) DoRegister() {
 	res := map[string] string{}
 	res["username"] = regInfo["mobile"]
 	res["nickname"] = regInfo["mobile"]
+	res["inviterId"] = strconv.Itoa(inviterId)
 	c.SetJson(0,res,"注册成功")
 	return
 }
@@ -222,7 +238,7 @@ func (c *AccountController) GetVerfiCode() {
 	beego.Info("通过c.Ctx.Input.IP获取的ip地址 ：" +inputIp)
 	//查询数据库 ip or mobile having count < 4 最新时间小于当前时间
 	if postData["is_reg"] == "1" { //如果是注册，要判断手机号是否注册过
-		userInfo, _  := models.GetUserByMobile(mobile)
+		userInfo, _  := models.GetUserByMobile(mobile,"id")
 		beego.Info(userInfo.Id)
 		if userInfo.Id != 0 {
 			c.SetJson(1,"","此手机号已存在，不能获取验证码")

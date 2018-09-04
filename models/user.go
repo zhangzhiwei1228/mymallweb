@@ -191,9 +191,9 @@ func DeleteUser(id int) (err error) {
 	}
 	return
 }
-func GetUserByMobile(mobile string) (v User, err error) {
+func GetUserByMobile(mobile string,fields string) (v User, err error) {
 	o := orm.NewOrm()
-	err = o.QueryTable(new(User)).Filter("mobile", mobile).One(&v,"Id")
+	err = o.QueryTable(new(User)).Filter("mobile", mobile).One(&v,fields)
 	beego.Info(err)
 	if err == orm.ErrMultiRows {
 		// 多条的时候报错
